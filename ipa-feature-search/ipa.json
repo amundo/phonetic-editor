@@ -1,0 +1,1587 @@
+{
+  "metadata": {
+    "title": "International Phonetic Alphabet",
+    "source": "http://en.wikipedia.org/wiki/IPA",
+    "notes": [
+      "A compilation from several sources."
+    ]
+  },
+  "rounding": [
+    "rounded",
+    "unrounded"
+  ],
+  "heights": [
+    "close",
+    "near-close",
+    "close-mid",
+    "mid",
+    "open-mid",
+    "near-open",
+    "open"
+  ],
+  "backness": [
+    "front",
+    "near-front",
+    "central",
+    "near-back",
+    "back"
+  ],
+  "places": [
+    "bilabial",
+    "labiodental",
+    "labial-velar",
+    "dental",
+    "alveolar",
+    "alveo-palatal",
+    "palato-alveolar",
+    "retroflex",
+    "labialized palatal",
+    "lateral",
+    "palatal",
+    "velar",
+    "uvular",
+    "glottal",
+    "pharyngeal",
+    "epiglottal"
+  ],
+  "manners": [
+    "plosive",
+    "prenasalized plosive",
+    "ejective",
+    "fricative",
+    "nasal",
+    "aspirated affricate",
+    "ejective affricate",
+    "affricate",
+    "aspirated approximant",
+    "aspirated plosive",
+    "ejective fricative",
+    "flap",
+    "implosive",
+    "labialized plosive",
+    "lateral approximant",
+    "lateral ejective fricative",
+    "lateral ejective affricate",
+    "lateral fricative",
+    "tap",
+    "approximant",
+    "trill"
+  ],
+  "voicings": [
+    "voiced",
+    "unvoiced"
+  ],
+  "phones": {
+    "vowels": [
+      {
+        "letter": "i",
+        "height": "close",
+        "backness": "front",
+        "rounding": "unrounded",
+        "name": "close front unrounded vowel"
+      },
+      {
+        "letter": "y",
+        "height": "close",
+        "backness": "front",
+        "rounding": "rounded",
+        "name": "close front rounded vowel"
+      },
+      {
+        "letter": "ɨ",
+        "height": "close",
+        "backness": "central",
+        "rounding": "unrounded",
+        "name": "close central unrounded vowel"
+      },
+      {
+        "letter": "ʉ",
+        "height": "close",
+        "backness": "central",
+        "rounding": "rounded",
+        "name": "close central rounded vowel"
+      },
+      {
+        "letter": "ɯ",
+        "height": "close",
+        "backness": "back",
+        "rounding": "unrounded",
+        "name": "close back unrounded vowel"
+      },
+      {
+        "letter": "u",
+        "height": "close",
+        "backness": "back",
+        "rounding": "rounded",
+        "name": "close back rounded vowel"
+      },
+      {
+        "letter": "ɪ",
+        "height": "near-close",
+        "backness": "near-front",
+        "rounding": "unrounded",
+        "name": "near-close near-front unrounded vowel"
+      },
+      {
+        "letter": "ʏ",
+        "height": "near-close",
+        "backness": "near-front",
+        "rounding": "rounded",
+        "name": "near-close near-front rounded vowel"
+      },
+      {
+        "letter": "ɪ̈",
+        "height": "near-close",
+        "backness": "central",
+        "rounding": "unrounded",
+        "name": "near-close central unrounded vowel"
+      },
+      {
+        "letter": "ʊ̈",
+        "height": "near-close",
+        "backness": "central",
+        "rounding": "rounded",
+        "name": "near-close central rounded vowel"
+      },
+      {
+        "letter": "ɯ̽",
+        "height": "near-close",
+        "backness": "near-back",
+        "rounding": "unrounded",
+        "name": "near-close near-back unrounded vowel"
+      },
+      {
+        "letter": "ʊ",
+        "height": "near-close",
+        "backness": "near-back",
+        "rounding": "rounded",
+        "name": "near-close near-back rounded vowel"
+      },
+      {
+        "letter": "e",
+        "height": "close-mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "name": "close-mid front unrounded vowel"
+      },
+      {
+        "letter": "ø",
+        "height": "close-mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "name": "close-mid front rounded vowel"
+      },
+      {
+        "letter": "ɘ",
+        "height": "close-mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "name": "close-mid central unrounded vowel"
+      },
+      {
+        "letter": "ɵ",
+        "height": "close-mid",
+        "backness": "central",
+        "rounding": "rounded",
+        "name": "close-mid central rounded vowel"
+      },
+      {
+        "letter": "ɤ",
+        "height": "close-mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "name": "close-mid back unrounded vowel"
+      },
+      {
+        "letter": "o",
+        "height": "close-mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "name": "close-mid back rounded vowel"
+      },
+      {
+        "letter": "e̞",
+        "height": "mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "name": "mid front unrounded vowel"
+      },
+      {
+        "letter": "ø̞",
+        "height": "mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "name": "mid front rounded vowel"
+      },
+      {
+        "letter": "ə",
+        "height": "mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "name": "mid central unrounded vowel"
+      },
+      {
+        "letter": "ɤ̞",
+        "height": "mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "name": "mid back unrounded vowel"
+      },
+      {
+        "letter": "o̞",
+        "height": "mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "name": "mid back rounded vowel"
+      },
+      {
+        "letter": "ɛ",
+        "height": "open-mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "name": "open-mid front unrounded vowel"
+      },
+      {
+        "letter": "œ",
+        "height": "open-mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "name": "open-mid front rounded vowel"
+      },
+      {
+        "letter": "ɜ",
+        "height": "open-mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "name": "open-mid central unrounded vowel"
+      },
+      {
+        "letter": "ɞ",
+        "height": "open-mid",
+        "backness": "central",
+        "rounding": "rounded",
+        "name": "open-mid central rounded vowel"
+      },
+      {
+        "letter": "ʌ",
+        "height": "open-mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "name": "open-mid back unrounded vowel"
+      },
+      {
+        "letter": "ɔ",
+        "height": "open-mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "name": "open-mid back rounded vowel"
+      },
+      {
+        "letter": "æ",
+        "height": "near-open",
+        "backness": "front",
+        "rounding": "unrounded",
+        "name": "near-open front unrounded vowel"
+      },
+      {
+        "letter": "ɞ̞",
+        "height": "near-open",
+        "backness": "central",
+        "rounding": "rounded",
+        "name": "near-open central rounded vowel"
+      },
+      {
+        "letter": "ɐ",
+        "height": "near-open",
+        "backness": "central",
+        "rounding": "unrounded",
+        "name": "near-open central unrounded vowel"
+      },
+      {
+        "letter": "a",
+        "height": "open",
+        "backness": "front",
+        "rounding": "unrounded",
+        "name": "open front unrounded vowel"
+      },
+      {
+        "letter": "ɶ",
+        "height": "open",
+        "backness": "front",
+        "rounding": "rounded",
+        "name": "open front rounded vowel"
+      },
+      {
+        "letter": "ä",
+        "height": "open",
+        "backness": "central",
+        "rounding": "unrounded",
+        "name": "open central unrounded vowel"
+      },
+      {
+        "letter": "ɑ",
+        "height": "open",
+        "backness": "back",
+        "rounding": "unrounded",
+        "name": "open back unrounded vowel"
+      },
+      {
+        "letter": "ɒ",
+        "height": "open",
+        "backness": "back",
+        "rounding": "rounded",
+        "name": "open back rounded vowel"
+      },
+      {
+        "name": "prenasalized alveolar plosive",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "prenasalized plosive",
+        "letter": "n͡d"
+      },
+      {
+        "name": "prenasalized bilabial plosive",
+        "voicing": "voiced",
+        "place": "bilabial",
+        "manner": "prenasalized plosive",
+        "letter": "m͡b"
+      },
+      {
+        "name": "prenasalized labiodental plosive",
+        "voicing": "voiced",
+        "place": "labiodental",
+        "manner": "prenasalized plosive",
+        "letter": "ɱ͡b̪"
+      },
+      {
+        "name": "prenasalized palatal plosive",
+        "voicing": "voiced",
+        "place": "palatal",
+        "manner": "prenasalized plosive",
+        "letter": "ɲ͡ɟ"
+      },
+      {
+        "name": "prenasalized retroflex plosive",
+        "voicing": "voiced",
+        "place": "retroflex",
+        "manner": "prenasalized plosive",
+        "letter": "ɳ͡ɖ"
+      },
+      {
+        "name": "prenasalized velar plosive",
+        "voicing": "voiced",
+        "place": "velar",
+        "manner": "prenasalized plosive",
+        "letter": "ŋ͡g"
+      },
+      {
+        "name": "prenasalized dental plosive",
+        "voicing": "voiced",
+        "place": "dental",
+        "manner": "prenasalized plosive",
+        "letter": "n̪͡d̪"
+      },
+      {
+        "name": "prenasalized uvular plosive",
+        "voicing": "voiced",
+        "place": "uvular",
+        "manner": "prenasalized plosive",
+        "letter": "ɴ͡ɢ"
+      },
+      {
+        "letter": "ĩ",
+        "height": "close",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "close front unrounded nasal vowel"
+      },
+      {
+        "letter": "ỹ",
+        "height": "close",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "close front rounded nasal vowel"
+      },
+      {
+        "letter": "ɨ̃",
+        "height": "close",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "close central unrounded nasal vowel"
+      },
+      {
+        "letter": "ʉ̃",
+        "height": "close",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "close central rounded nasal vowel"
+      },
+      {
+        "letter": "ɯ̃",
+        "height": "close",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "close back unrounded nasal vowel"
+      },
+      {
+        "letter": "ũ",
+        "height": "close",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "close back rounded nasal vowel"
+      },
+      {
+        "letter": "ɪ̃",
+        "height": "near-close",
+        "backness": "near-front",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "near-close near-front unrounded nasal vowel"
+      },
+      {
+        "letter": "ʏ̃",
+        "height": "near-close",
+        "backness": "near-front",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "near-close near-front rounded nasal vowel"
+      },
+      {
+        "letter": "ɪ̈̃",
+        "height": "near-close",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "near-close central unrounded nasal vowel"
+      },
+      {
+        "letter": "ʊ̈̃",
+        "height": "near-close",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "near-close central rounded nasal vowel"
+      },
+      {
+        "letter": "ɯ̽̃",
+        "height": "near-close",
+        "backness": "near-back",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "near-close near-back unrounded nasal vowel"
+      },
+      {
+        "letter": "ʊ̃",
+        "height": "near-close",
+        "backness": "near-back",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "near-close near-back rounded nasal vowel"
+      },
+      {
+        "letter": "ẽ",
+        "height": "close-mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "close-mid front unrounded nasal vowel"
+      },
+      {
+        "letter": "ø̃",
+        "height": "close-mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "close-mid front rounded nasal vowel"
+      },
+      {
+        "letter": "ɘ̃",
+        "height": "close-mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "close-mid central unrounded nasal vowel"
+      },
+      {
+        "letter": "ɵ̃",
+        "height": "close-mid",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "close-mid central rounded nasal vowel"
+      },
+      {
+        "letter": "ɤ̃",
+        "height": "close-mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "close-mid back unrounded nasal vowel"
+      },
+      {
+        "letter": "õ",
+        "height": "close-mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "close-mid back rounded nasal vowel"
+      },
+      {
+        "letter": "ẽ̞",
+        "height": "mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "mid front unrounded nasal vowel"
+      },
+      {
+        "letter": "ø̞̃",
+        "height": "mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "mid front rounded nasal vowel"
+      },
+      {
+        "letter": "ə̃",
+        "height": "mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "mid central unrounded nasal vowel"
+      },
+      {
+        "letter": "ɤ̞̃",
+        "height": "mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "mid back unrounded nasal vowel"
+      },
+      {
+        "letter": "õ̞",
+        "height": "mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "mid back rounded nasal vowel"
+      },
+      {
+        "letter": "ɛ̃",
+        "height": "open-mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "open-mid front unrounded nasal vowel"
+      },
+      {
+        "letter": "œ̃",
+        "height": "open-mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "open-mid front rounded nasal vowel"
+      },
+      {
+        "letter": "ɜ̃",
+        "height": "open-mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "open-mid central unrounded nasal vowel"
+      },
+      {
+        "letter": "ɞ̃",
+        "height": "open-mid",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "open-mid central rounded nasal vowel"
+      },
+      {
+        "letter": "ʌ̃",
+        "height": "open-mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "open-mid back unrounded nasal vowel"
+      },
+      {
+        "letter": "ɔ̃",
+        "height": "open-mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "open-mid back rounded nasal vowel"
+      },
+      {
+        "letter": "æ̃",
+        "height": "near-open",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "near-open front unrounded nasal vowel"
+      },
+      {
+        "letter": "ɞ̞̃",
+        "height": "near-open",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "near-open central rounded nasal vowel"
+      },
+      {
+        "letter": "ɐ̃",
+        "height": "near-open",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "near-open central unrounded nasal vowel"
+      },
+      {
+        "letter": "ã",
+        "height": "open",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "open front unrounded nasal vowel"
+      },
+      {
+        "letter": "ɶ̃",
+        "height": "open",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "open front rounded nasal vowel"
+      },
+      {
+        "letter": "ä̃",
+        "height": "open",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "open central unrounded nasal vowel"
+      },
+      {
+        "letter": "ɑ̃",
+        "height": "open",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": true,
+        "name": "open back unrounded nasal vowel"
+      },
+      {
+        "letter": "ɒ̃",
+        "height": "open",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": true,
+        "name": "open back rounded nasal vowel"
+      }
+    ],
+    "consonants": [
+      {
+        "name": "voiced aspirated alveolar plosive",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "aspirated plosive",
+        "letter": "dʱ"
+      },
+      {
+        "name": "alveolar lateral ejective affricate",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "lateral ejective affricate",
+        "letter": "t͡ɬʼ"
+      },
+      {
+        "name": "alveolar lateral ejective fricative",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "lateral ejective fricative",
+        "letter": "ɬ’"
+      },
+      {
+        "name": "aspirated voiceless dental plosive",
+        "voicing": "voiceless",
+        "place": "dental",
+        "manner": "aspirated plosive",
+        "letter": "t̪ʰ"
+      },
+      {
+        "name": "aspirated voiceless alveolar plosive",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "aspirated plosive",
+        "letter": "tʰ"
+      },
+      {
+        "name": "alveolar ejective",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "ejective",
+        "letter": "tʼ"
+      },
+      {
+        "name": "alveolar ejective fricative",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "ejective fricative",
+        "letter": "sʼ"
+      },
+      {
+        "name": "voiceless alveolar fricative",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "fricative",
+        "letter": "s"
+      },
+      {
+        "name": "voiced alveolar fricative",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "fricative",
+        "letter": "z"
+      },
+      {
+        "name": "voiced alveolar implosive",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "implosive",
+        "letter": "ɗ"
+      },
+      {
+        "name": "labialized voiceless alveolar plosive",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "labialized plosive",
+        "letter": "dʷ"
+      },
+      {
+        "name": "labialized voiceless alveolar plosive",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "labialized plosive",
+        "letter": "tʷ"
+      },
+      {
+        "name": "alveolar palatalized lateral approximant",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "palatalized lateral approximant",
+        "letter": "lʲ"
+      },
+      {
+        "name": "voiceless alveolar lateral approximant",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "lateral approximant",
+        "letter": "l̥"
+      },
+      {
+        "name": "alveolar lateral approximant",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "lateral approximant",
+        "letter": "l"
+      },
+      {
+        "name": "voiceless alveolar lateral fricative",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "lateral fricative",
+        "letter": "ɬ"
+      },
+      {
+        "name": "voiced alveolar lateral fricative",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "lateral fricative",
+        "letter": "ɮ"
+      },
+      {
+        "name": "alveolar nasal",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "nasal",
+        "letter": "n"
+      },
+      {
+        "name": "voiceless velar nasal",
+        "voicing": "voiceless",
+        "place": "velar",
+        "manner": "nasal",
+        "letter": "ŋ̊"
+      },
+      {
+        "name": "voiceless alveolar nasal",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "nasal",
+        "letter": "n̥"
+      },
+      {
+        "name": "voiced alveolar plosive",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "plosive",
+        "letter": "d"
+      },
+      {
+        "name": "voiceless alveolar plosive",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "plosive",
+        "letter": "t"
+      },
+      {
+        "name": "alveolar tap",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "tap",
+        "letter": "ɾ"
+      },
+      {
+        "name": "alveolar trill",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "trill",
+        "letter": "r"
+      },
+      {
+        "name": "voiced aspirated bilabial plosive",
+        "voicing": "voiced",
+        "place": "bilabial",
+        "manner": "aspirated plosive",
+        "letter": "bʱ"
+      },
+      {
+        "name": "aspirated voiceless bilabial plosive",
+        "voicing": "voiceless",
+        "place": "bilabial",
+        "manner": "aspirated plosive",
+        "letter": "pʰ"
+      },
+      {
+        "name": "bilabial ejective",
+        "voicing": "voiceless",
+        "place": "bilabial",
+        "manner": "ejective",
+        "letter": "pʼ"
+      },
+      {
+        "name": "voiced bilabial fricative",
+        "voicing": "voiceless",
+        "place": "bilabial",
+        "manner": "fricative",
+        "letter": "ɸ"
+      },
+      {
+        "name": "voiced bilabial fricative",
+        "voicing": "voiced",
+        "place": "bilabial",
+        "manner": "fricative",
+        "letter": "β"
+      },
+      {
+        "name": "voiced bilabial implosive",
+        "voicing": "voiced",
+        "place": "bilabial",
+        "manner": "implosive",
+        "letter": "ɓ"
+      },
+      {
+        "name": "labialized voiceless bilabial plosive",
+        "voicing": "voiced",
+        "place": "bilabial",
+        "manner": "labialized plosive",
+        "letter": "bʷ"
+      },
+      {
+        "name": "labialized voiceless bilabial plosive",
+        "voicing": "voiceless",
+        "place": "bilabial",
+        "manner": "labialized plosive",
+        "letter": "pʷ"
+      },
+      {
+        "name": "bilabial nasal",
+        "voicing": "voiced",
+        "place": "bilabial",
+        "manner": "nasal",
+        "letter": "m"
+      },
+      {
+        "name": "voiceless bilabial nasal",
+        "voicing": "voiceless",
+        "place": "bilabial",
+        "manner": "nasal",
+        "letter": "m̥"
+      },
+      {
+        "name": "voiced bilabial plosive",
+        "voicing": "voiced",
+        "place": "bilabial",
+        "manner": "plosive",
+        "letter": "b"
+      },
+      {
+        "name": "voiced labiodental plosive",
+        "voicing": "voiced",
+        "place": "labiodental",
+        "manner": "plosive",
+        "letter": "b̪"
+      },
+      {
+        "name": "voiceless bilabial plosive",
+        "voicing": "voiceless",
+        "place": "bilabial",
+        "manner": "plosive",
+        "letter": "p"
+      },
+      {
+        "name": "voiceless labiodental plosive",
+        "voicing": "voiceless",
+        "place": "labiodental",
+        "manner": "plosive",
+        "letter": "p̪"
+      },
+      {
+        "name": "bilabial trill",
+        "voicing": "voiced",
+        "place": "bilabial",
+        "manner": "trill",
+        "letter": "ʙ"
+      },
+      {
+        "name": "voiced dental fricative",
+        "voicing": "voiced",
+        "place": "dental",
+        "manner": "fricative",
+        "letter": "ð"
+      },
+      {
+        "name": "voiceless dental fricative",
+        "voicing": "voiceless",
+        "place": "dental",
+        "manner": "fricative",
+        "letter": "θ"
+      },
+      {
+        "name": "voiced dental plosive",
+        "voicing": "voiced",
+        "place": "dental",
+        "manner": "plosive",
+        "letter": "d̪"
+      },
+      {
+        "name": "dental ejective",
+        "voicing": "voiceless",
+        "place": "dental",
+        "manner": "ejective",
+        "letter": "t̪’"
+      },
+      {
+        "name": "voiceless dental plosive",
+        "voicing": "voiceless",
+        "place": "dental",
+        "manner": "plosive",
+        "letter": "t̪"
+      },
+      {
+        "name": "voiceless glottal fricative",
+        "voicing": "voiceless",
+        "place": "glottal",
+        "manner": "fricative",
+        "letter": "h"
+      },
+      {
+        "name": "glottal plosive",
+        "voicing": "voiceless",
+        "place": "glottal",
+        "manner": "plosive",
+        "letter": "ʔ"
+      },
+      {
+        "name": "labiodental approximant",
+        "voicing": "voiced",
+        "place": "labiodental",
+        "manner": "approximant",
+        "letter": "ʋ"
+      },
+      {
+        "name": "voiceless labiodental fricative",
+        "voicing": "voiceless",
+        "place": "labiodental",
+        "manner": "fricative",
+        "letter": "f"
+      },
+      {
+        "name": "voiced labiodental fricative",
+        "voicing": "voiced",
+        "place": "labiodental",
+        "manner": "fricative",
+        "letter": "v"
+      },
+      {
+        "name": "labiodental nasal",
+        "voicing": "voiced",
+        "place": "labiodental",
+        "manner": "nasal",
+        "letter": "ɱ"
+      },
+      {
+        "name": "labiodental nasal",
+        "voicing": "voiceless",
+        "place": "labiodental",
+        "manner": "nasal",
+        "letter": "ɱ̥"
+      },
+      {
+        "name": "voiceless palatal approximant",
+        "voicing": "voiceless",
+        "place": "palatal",
+        "manner": "approximant",
+        "letter": "j̊"
+      },
+      {
+        "name": "palatal approximant",
+        "voicing": "voiced",
+        "place": "palatal",
+        "manner": "approximant",
+        "letter": "j"
+      },
+      {
+        "name": "voiceless palatal fricative",
+        "voicing": "voiceless",
+        "place": "palatal",
+        "manner": "fricative",
+        "letter": "ç"
+      },
+      {
+        "name": "voiced palatal fricative",
+        "voicing": "voiced",
+        "place": "palatal",
+        "manner": "fricative",
+        "letter": "ʝ"
+      },
+      {
+        "name": "palatal lateral approximant",
+        "voicing": "voiced",
+        "place": "palatal",
+        "manner": "lateral approximant",
+        "letter": "ʎ"
+      },
+      {
+        "name": "palatal nasal",
+        "voicing": "voiced",
+        "place": "palatal",
+        "manner": "nasal",
+        "letter": "ɲ"
+      },
+      {
+        "name": "voiceless palatal plosive",
+        "voicing": "voiceless",
+        "place": "palatal",
+        "manner": "plosive",
+        "letter": "c"
+      },
+      {
+        "name": "voiced palatal stop",
+        "voicing": "voiced",
+        "place": "palatal",
+        "manner": "plosive",
+        "letter": "ɟ"
+      },
+      {
+        "name": "voiceless palato-alveolar fricative",
+        "voicing": "voiceless",
+        "place": "palato-alveolar",
+        "manner": "fricative",
+        "letter": "ʃ"
+      },
+      {
+        "name": "voiced palato-alveolar fricative",
+        "voicing": "voiced",
+        "place": "palato-alveolar",
+        "manner": "fricative",
+        "letter": "ʒ"
+      },
+      {
+        "name": "retroflex flap",
+        "voicing": "voiced",
+        "place": "retroflex",
+        "manner": "flap",
+        "letter": "ɽ"
+      },
+      {
+        "name": "voiceless retroflex fricative",
+        "voicing": "voiceless",
+        "place": "retroflex",
+        "manner": "fricative",
+        "letter": "ʂ"
+      },
+      {
+        "name": "voiced retroflex sibilant",
+        "voicing": "voiced",
+        "place": "retroflex",
+        "manner": "fricative",
+        "letter": "ʐ"
+      },
+      {
+        "name": "retroflex lateral approximant",
+        "voicing": "voiced",
+        "place": "retroflex",
+        "manner": "lateral approximant",
+        "letter": "ɭ"
+      },
+      {
+        "name": "retroflex nasal",
+        "voicing": "voiced",
+        "place": "retroflex",
+        "manner": "nasal",
+        "letter": "ɳ"
+      },
+      {
+        "name": "voiced retroflex plosive",
+        "voicing": "voiced",
+        "place": "retroflex",
+        "manner": "plosive",
+        "letter": "ɖ"
+      },
+      {
+        "name": "voiceless retroflex plosive",
+        "voicing": "voiceless",
+        "place": "retroflex",
+        "manner": "plosive",
+        "letter": "ʈ"
+      },
+      {
+        "name": "aspirated voiceless uvular plosive",
+        "voicing": "voiceless",
+        "place": "uvular",
+        "manner": "aspirated plosive",
+        "letter": "qʰ"
+      },
+      {
+        "name": "uvular ejective",
+        "voicing": "voiceless",
+        "place": "uvular",
+        "manner": "ejective",
+        "letter": "qʼ"
+      },
+      {
+        "name": "voiced uvular fricative",
+        "voicing": "voiced",
+        "place": "uvular",
+        "manner": "fricative",
+        "letter": "ʁ"
+      },
+      {
+        "name": "voiceless uvular fricative",
+        "voicing": "voiceless",
+        "place": "uvular",
+        "manner": "fricative",
+        "letter": "χ"
+      },
+      {
+        "name": "voiceless uvular plosive",
+        "voicing": "voiceless",
+        "place": "uvular",
+        "manner": "plosive",
+        "letter": "q"
+      },
+      {
+        "name": "velar approximant",
+        "voicing": "voiced",
+        "place": "velar",
+        "manner": "approximant",
+        "letter": "ɰ"
+      },
+      {
+        "name": "voiced aspirated velar plosive",
+        "voicing": "voiced",
+        "place": "velar",
+        "manner": "aspirated plosive",
+        "letter": "gʱ"
+      },
+      {
+        "name": "aspirated voiceless velar plosive",
+        "voicing": "voiceless",
+        "place": "velar",
+        "manner": "aspirated plosive",
+        "letter": "kʰ"
+      },
+      {
+        "name": "velar ejective",
+        "voicing": "voiceless",
+        "place": "velar",
+        "manner": "ejective",
+        "letter": "kʼ"
+      },
+      {
+        "name": "voiced velar fricative",
+        "voicing": "voiced",
+        "place": "velar",
+        "manner": "fricative",
+        "letter": "ɣ"
+      },
+      {
+        "name": "voiceless velar fricative",
+        "voicing": "voiceless",
+        "place": "velar",
+        "manner": "fricative",
+        "letter": "x"
+      },
+      {
+        "name": "voiced velar implosive",
+        "voicing": "voiced",
+        "place": "velar",
+        "manner": "implosive",
+        "letter": "ɠ"
+      },
+      {
+        "name": "labialized voiceless velar plosive",
+        "voicing": "voiced",
+        "place": "velar",
+        "manner": "labialized plosive",
+        "letter": "gʷ"
+      },
+      {
+        "name": "labialized voiceless velar plosive",
+        "voicing": "voiceless",
+        "place": "velar",
+        "manner": "labialized plosive",
+        "letter": "kʷ"
+      },
+      {
+        "name": "velar nasal",
+        "voicing": "voiced",
+        "place": "velar",
+        "manner": "nasal",
+        "letter": "ŋ"
+      },
+      {
+        "name": "voiced velar plosive",
+        "voicing": "voiced",
+        "place": "velar",
+        "manner": "plosive",
+        "letter": "g"
+      },
+      {
+        "name": "voiceless velar plosive",
+        "voicing": "voiceless",
+        "place": "velar",
+        "manner": "plosive",
+        "letter": "k"
+      },
+      {
+        "name": "voiceless velar palatalized plosive",
+        "voicing": "voiceless",
+        "place": "velar",
+        "manner": "palatalized plosive",
+        "letter": "kʲ"
+      },
+      {
+        "name": "voiceless palatal ejective",
+        "voicing": "voiceless",
+        "place": "palatal",
+        "manner": "ejective",
+        "letter": "c’"
+      },
+      {
+        "name": "voiceless palatal aspirated plosive",
+        "voicing": "voiceless",
+        "place": "palatal",
+        "manner": "aspirated plosive",
+        "letter": "cʰ"
+      },
+      {
+        "name": "voiceless alveolo-palatal fricative",
+        "voicing": "voiceless",
+        "place": "alveo-palatal",
+        "manner": "fricative",
+        "letter": "ɕ"
+      },
+      {
+        "name": "voiceless alveolo-palatal affricate",
+        "voicing": "voiceless",
+        "place": "alveo-palatal",
+        "manner": "affricate",
+        "letter": "t͡ɕ"
+      },
+      {
+        "name": "voiced alveolo-palatal affricate",
+        "voicing": "voiced",
+        "place": "alveo-palatal",
+        "manner": "affricate",
+        "letter": "d͡ʑ"
+      },
+      {
+        "name": "voiced alveolar affricate",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "affricate",
+        "letter": "d͡z"
+      },
+      {
+        "name": "voiced aspirated alveolar affricate",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "aspirated affricate",
+        "letter": "d͡zʱ"
+      },
+      {
+        "name": "voiced retroflex affricate",
+        "voicing": "voiced",
+        "place": "retroflex",
+        "manner": "affricate",
+        "letter": "ɖ͡ʐ"
+      },
+      {
+        "name": "voiced palato-alveolar affricate",
+        "voicing": "voiced",
+        "place": "palato-alveolar",
+        "manner": "affricate",
+        "letter": "d͡ʒ"
+      },
+      {
+        "name": "voiced aspirated palato-alveolar affricate",
+        "voicing": "voiced",
+        "place": "palato-alveolar",
+        "manner": "aspirated affricate",
+        "letter": "d͡ʒʱ"
+      },
+      {
+        "name": "voiced aspirated retroflex plosive",
+        "voicing": "voiced",
+        "place": "retroflex",
+        "manner": "aspirated plosive",
+        "letter": "ɖʱ"
+      },
+      {
+        "name": "voiceless labial–velar stop",
+        "voicing": "voiceless",
+        "place": "labial-velar",
+        "manner": "plosive",
+        "letter": "k͡p"
+      },
+      {
+        "name": "voiced labial–velar stop",
+        "voicing": "voiced",
+        "place": "labial-velar",
+        "manner": "plosive",
+        "letter": "g͡b"
+      },
+      {
+        "name": "voiced uvular plosive",
+        "voicing": "voiced",
+        "place": "uvular",
+        "manner": "plosive",
+        "letter": "ɢ"
+      },
+      {
+        "name": "voiceless pharyngeal fricative",
+        "voicing": "voiceless",
+        "place": "pharyngeal",
+        "manner": "fricative",
+        "letter": "ħ"
+      },
+      {
+        "name": "voiced glottal fricative",
+        "voicing": "voiced",
+        "place": "glottal",
+        "manner": "fricative",
+        "letter": "ɦ"
+      },
+      {
+        "name": "voiced velar lateral approximant",
+        "voicing": "voiced",
+        "place": "lateral",
+        "manner": "approximant",
+        "letter": "ʟ"
+      },
+      {
+        "name": "voiced dental nasal",
+        "voicing": "voiced",
+        "place": "dental",
+        "manner": "nasal",
+        "letter": "n̪"
+      },
+      {
+        "name": "voiced uvular nasal",
+        "voicing": "voiced",
+        "place": "uvular",
+        "manner": "nasal",
+        "letter": "ɴ"
+      },
+      {
+        "name": "voiceless uvular ejective",
+        "voicing": "voiceless",
+        "place": "uvular",
+        "manner": "ejective",
+        "letter": "q’"
+      },
+      {
+        "name": "uvular trill",
+        "voicing": "voiced",
+        "place": "uvular",
+        "manner": "trill",
+        "letter": "ʀ"
+      },
+      {
+        "name": "voiceless alveolar approximant",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "approximant",
+        "letter": "r̥"
+      },
+      {
+        "name": "voiced alveolar approximant",
+        "voicing": "voiced",
+        "place": "alveolar",
+        "manner": "approximant",
+        "letter": "ɹ"
+      },
+      {
+        "name": "voiced retroflex approximant",
+        "voicing": "voiced",
+        "place": "retroflex",
+        "manner": "approximant",
+        "letter": "ɻ"
+      },
+      {
+        "name": "voiceless alveolar ejective fricative",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "ejective fricative",
+        "letter": "s’"
+      },
+      {
+        "name": "voiceless palatal ejective fricative",
+        "voicing": "voiceless",
+        "place": "palatal",
+        "manner": "ejective fricative",
+        "letter": "ʃ’"
+      },
+      {
+        "name": "voiceless alveolar affricate",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "affricate",
+        "letter": "t͡s"
+      },
+      {
+        "name": "voiceless alveolar ejective affricate",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "ejective affricate",
+        "letter": "t͡s’"
+      },
+      {
+        "name": "voiceless alveolar aspirated affricate",
+        "voicing": "voiceless",
+        "place": "alveolar",
+        "manner": "aspirated affricate",
+        "letter": "t͡sʰ"
+      },
+      {
+        "name": "voiceless retroflex affricate",
+        "voicing": "voiceless",
+        "place": "retroflex",
+        "manner": "affricate",
+        "letter": "ʈ͡ʂ"
+      },
+      {
+        "name": "voiceless palato-alveolar affricate",
+        "voicing": "voiceless",
+        "place": "palato-alveolar",
+        "manner": "affricate",
+        "letter": "t͡ʃ"
+      },
+      {
+        "name": "voiceless palato-alveolar ejective affricate",
+        "voicing": "voiceless",
+        "place": "palato-alveolar",
+        "manner": "ejective affricate",
+        "letter": "t͡ʃ’"
+      },
+      {
+        "name": "voiceless palato-alveolar aspirated affricate",
+        "voicing": "voiceless",
+        "place": "palato-alveolar",
+        "manner": "aspirated affricate",
+        "letter": "t͡ʃʰ"
+      },
+      {
+        "name": "voiceless retroflex ejective",
+        "voicing": "voiceless",
+        "place": "retroflex",
+        "manner": "ejective",
+        "letter": "ʈ’"
+      },
+      {
+        "name": "voiceless retroflex aspirated plosive",
+        "voicing": "voiceless",
+        "place": "retroflex",
+        "manner": "aspirated plosive",
+        "letter": "ʈʰ"
+      },
+      {
+        "name": "labialized palatal approximant",
+        "voicing": "voiced",
+        "place": "labialized palatal",
+        "manner": "approximant",
+        "letter": "ɥ"
+      },
+      {
+        "name": "voiceless labial-velar approximant",
+        "voicing": "voiceless",
+        "place": "labial-velar",
+        "manner": "approximant",
+        "letter": "ʍ"
+      },
+      {
+        "name": "voiced labial-velar approximant",
+        "voicing": "voiced",
+        "place": "labial-velar",
+        "manner": "approximant",
+        "letter": "w"
+      },
+      {
+        "name": "aspirated voiceless labial-velar approximant",
+        "voicing": "voiceless",
+        "place": "labial-velar",
+        "manner": "aspirated approximant",
+        "letter": "wʰ"
+      },
+      {
+        "name": "velar ejective fricative",
+        "voicing": "voiceless",
+        "place": "velar",
+        "manner": "ejective fricative",
+        "letter": "x’"
+      },
+      {
+        "name": "voiced alveolo-palatal sibilant",
+        "voicing": "voiced",
+        "place": "alveo-palatal",
+        "manner": "fricative",
+        "letter": "ʑ"
+      },
+      {
+        "name": "epiglottal plosive",
+        "voicing": "voiceless",
+        "place": "epiglottal",
+        "manner": "plosive",
+        "letter": "ʡ"
+      }
+    ]
+  }
+}

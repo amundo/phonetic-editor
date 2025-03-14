@@ -1,7 +1,7 @@
 // index.js - Main application entry point for the integrated phonetic editor
-import { PhoneticEditor } from './PhoneticEditor.js';
-import { IPAFeatureSearch } from './IPAFeatureSearch.js';
-import { IPAAliasSearch } from './IPAAliasSearch.js';
+import { PhoneticEditor } from './phonetic-editor/PhoneticEditor.js';
+import { IPAFeatureSearch } from './ipa-feature-search/IPAFeatureSearch.js';
+import { IPAAliasSearch } from './ipa-alias-search/IPAAliasSearch.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Application state
@@ -300,6 +300,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   function saveState() {
+    // Apply Unicode normalization before saving
+    if (state.currentText) {
+      state.currentText = state.currentText.normalize("NFKC");
+    }
     localStorage.setItem('phoneticEditorState', JSON.stringify(state));
   }
   
@@ -316,7 +320,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const editor = document.querySelector('phonetic-editor');
         if (editor) {
           if (state.currentText) {
-            editor.value = state.currentText;
+            // Ensure normalized text is loaded
+            editor.value = state.currentText.normalize("NFKC");
           }
           
           if (state.substitutionRules && state.substitutionRules.length > 0) {

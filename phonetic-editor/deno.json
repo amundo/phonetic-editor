@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "build": "pandoc -f markdown -t html --section-divs --css phonetic-editor-docs.css --template=template.html -o phonetic-editor-docs.html phonetic-editor-docs.md"
+  }
+}
