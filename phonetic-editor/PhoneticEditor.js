@@ -109,7 +109,7 @@ export class PhoneticEditor extends HTMLElement {
     this._substitutionRules.forEach(([pattern, replacement]) => {
       text = text.replace(new RegExp(this.escapeRegExp(pattern), 'g'), replacement);
     });
-    this.inputField.value = text;
+    this.inputField.value = text.normalize("NFKC")
     
     // Dispatch change event
     this.dispatchEvent(new CustomEvent('input', { 
