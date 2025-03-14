@@ -1,0 +1,3881 @@
+{
+  "metadata": {
+    "title": "International Phonetic Alphabet",
+    "source": "http://en.wikipedia.org/wiki/IPA",
+    "notes": [
+      "A compilation from several sources."
+    ]
+  },
+  "features": {
+    "rounding": [
+      "rounded",
+      "unrounded"
+    ],
+    "heights": [
+      "close",
+      "near-close",
+      "close-mid",
+      "mid",
+      "open-mid",
+      "near-open",
+      "open"
+    ],
+    "backness": [
+      "front",
+      "near-front",
+      "central",
+      "near-back",
+      "back"
+    ],
+    "places": [
+      "bilabial",
+      "labiodental",
+      "labial-velar",
+      "dental",
+      "alveolar",
+      "alveo-palatal",
+      "palato-alveolar",
+      "retroflex",
+      "labialized palatal",
+      "lateral",
+      "palatal",
+      "velar",
+      "uvular",
+      "glottal",
+      "pharyngeal",
+      "epiglottal"
+    ],
+    "manners": [
+      "plosive",
+      "prenasalized plosive",
+      "ejective",
+      "fricative",
+      "nasal",
+      "aspirated affricate",
+      "ejective affricate",
+      "affricate",
+      "aspirated approximant",
+      "aspirated plosive",
+      "ejective fricative",
+      "flap",
+      "implosive",
+      "labialized plosive",
+      "lateral approximant",
+      "lateral ejective fricative",
+      "lateral ejective affricate",
+      "lateral fricative",
+      "tap",
+      "approximant",
+      "trill"
+    ],
+    "voicings": [
+      "voiced",
+      "unvoiced"
+    ]
+  },
+  "phones": [
+    {
+      "letter": "i",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "close front unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "y",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "close front rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɨ",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "close central unrounded vowel",
+      "aliases": [
+        "barredi",
+        "ibar"
+      ]
+    },
+    {
+      "letter": "ʉ",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "close central rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɯ",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "close back unrounded vowel",
+      "aliases": [
+        "turnedm"
+      ]
+    },
+    {
+      "letter": "u",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "close back rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɪ",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "near-front",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "near-close near-front unrounded vowel",
+      "aliases": [
+        "smallcapi"
+      ]
+    },
+    {
+      "letter": "ʏ",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "near-front",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "near-close near-front rounded vowel",
+      "aliases": [
+        "smallcapy"
+      ]
+    },
+    {
+      "letter": "ɪ̈",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "near-close central unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ʊ̈",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "near-close central rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɯ̽",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "near-back",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "near-close near-back unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ʊ",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "near-back",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "near-close near-back rounded vowel",
+      "aliases": [
+        "upsilon"
+      ]
+    },
+    {
+      "letter": "e",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "close-mid front unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ø",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "close-mid front rounded vowel",
+      "aliases": [
+        "barredo"
+      ]
+    },
+    {
+      "letter": "ɘ",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "close-mid central unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɵ",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "close-mid central rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɤ",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "close-mid back unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "o",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "close-mid back rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "e̞",
+      "type": "vowel",
+      "features": {
+        "height": "mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "mid front unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ø̞",
+      "type": "vowel",
+      "features": {
+        "height": "mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "mid front rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ə",
+      "type": "vowel",
+      "features": {
+        "height": "mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "mid central unrounded vowel",
+      "aliases": [
+        "schwa"
+      ]
+    },
+    {
+      "letter": "ɤ̞",
+      "type": "vowel",
+      "features": {
+        "height": "mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "mid back unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "o̞",
+      "type": "vowel",
+      "features": {
+        "height": "mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "mid back rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɛ",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "open-mid front unrounded vowel",
+      "aliases": [
+        "opene"
+      ]
+    },
+    {
+      "letter": "œ",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "open-mid front rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɜ",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "open-mid central unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɞ",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "open-mid central rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ʌ",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "open-mid back unrounded vowel",
+      "aliases": [
+        "turnedv",
+        "smallcapA",
+        "wedge"
+      ]
+    },
+    {
+      "letter": "ɔ",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "open-mid back rounded vowel",
+      "aliases": [
+        "openo"
+      ]
+    },
+    {
+      "letter": "æ",
+      "type": "vowel",
+      "features": {
+        "height": "near-open",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "near-open front unrounded vowel",
+      "aliases": [
+        "ash"
+      ]
+    },
+    {
+      "letter": "ɞ̞",
+      "type": "vowel",
+      "features": {
+        "height": "near-open",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "near-open central rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɐ",
+      "type": "vowel",
+      "features": {
+        "height": "near-open",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "near-open central unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "a",
+      "type": "vowel",
+      "features": {
+        "height": "open",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "open front unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɶ",
+      "type": "vowel",
+      "features": {
+        "height": "open",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "open front rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ä",
+      "type": "vowel",
+      "features": {
+        "height": "open",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "open central unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɑ",
+      "type": "vowel",
+      "features": {
+        "height": "open",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": false
+      },
+      "name": "open back unrounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɒ",
+      "type": "vowel",
+      "features": {
+        "height": "open",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": false
+      },
+      "name": "open back rounded vowel",
+      "aliases": []
+    },
+    {
+      "letter": "n͡d",
+      "type": "vowel",
+      "features": {
+        "height": null,
+        "backness": null,
+        "rounding": null,
+        "nasal": false
+      },
+      "name": "prenasalized alveolar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "m͡b",
+      "type": "vowel",
+      "features": {
+        "height": null,
+        "backness": null,
+        "rounding": null,
+        "nasal": false
+      },
+      "name": "prenasalized bilabial plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ɱ͡b̪",
+      "type": "vowel",
+      "features": {
+        "height": null,
+        "backness": null,
+        "rounding": null,
+        "nasal": false
+      },
+      "name": "prenasalized labiodental plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ɲ͡ɟ",
+      "type": "vowel",
+      "features": {
+        "height": null,
+        "backness": null,
+        "rounding": null,
+        "nasal": false
+      },
+      "name": "prenasalized palatal plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ɳ͡ɖ",
+      "type": "vowel",
+      "features": {
+        "height": null,
+        "backness": null,
+        "rounding": null,
+        "nasal": false
+      },
+      "name": "prenasalized retroflex plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ŋ͡g",
+      "type": "vowel",
+      "features": {
+        "height": null,
+        "backness": null,
+        "rounding": null,
+        "nasal": false
+      },
+      "name": "prenasalized velar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "n̪͡d̪",
+      "type": "vowel",
+      "features": {
+        "height": null,
+        "backness": null,
+        "rounding": null,
+        "nasal": false
+      },
+      "name": "prenasalized dental plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ɴ͡ɢ",
+      "type": "vowel",
+      "features": {
+        "height": null,
+        "backness": null,
+        "rounding": null,
+        "nasal": false
+      },
+      "name": "prenasalized uvular plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ĩ",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "close front unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ỹ",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "close front rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɨ̃",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "close central unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ʉ̃",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "close central rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɯ̃",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "close back unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ũ",
+      "type": "vowel",
+      "features": {
+        "height": "close",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "close back rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɪ̃",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "near-front",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "near-close near-front unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ʏ̃",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "near-front",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "near-close near-front rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɪ̈̃",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "near-close central unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ʊ̈̃",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "near-close central rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɯ̽̃",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "near-back",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "near-close near-back unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ʊ̃",
+      "type": "vowel",
+      "features": {
+        "height": "near-close",
+        "backness": "near-back",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "near-close near-back rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ẽ",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "close-mid front unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ø̃",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "close-mid front rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɘ̃",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "close-mid central unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɵ̃",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "close-mid central rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɤ̃",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "close-mid back unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "õ",
+      "type": "vowel",
+      "features": {
+        "height": "close-mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "close-mid back rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ẽ̞",
+      "type": "vowel",
+      "features": {
+        "height": "mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "mid front unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ø̞̃",
+      "type": "vowel",
+      "features": {
+        "height": "mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "mid front rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ə̃",
+      "type": "vowel",
+      "features": {
+        "height": "mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "mid central unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɤ̞̃",
+      "type": "vowel",
+      "features": {
+        "height": "mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "mid back unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "õ̞",
+      "type": "vowel",
+      "features": {
+        "height": "mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "mid back rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɛ̃",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "open-mid front unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "œ̃",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "open-mid front rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɜ̃",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "open-mid central unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɞ̃",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "open-mid central rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ʌ̃",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "open-mid back unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɔ̃",
+      "type": "vowel",
+      "features": {
+        "height": "open-mid",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "open-mid back rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "æ̃",
+      "type": "vowel",
+      "features": {
+        "height": "near-open",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "near-open front unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɞ̞̃",
+      "type": "vowel",
+      "features": {
+        "height": "near-open",
+        "backness": "central",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "near-open central rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɐ̃",
+      "type": "vowel",
+      "features": {
+        "height": "near-open",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "near-open central unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ã",
+      "type": "vowel",
+      "features": {
+        "height": "open",
+        "backness": "front",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "open front unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɶ̃",
+      "type": "vowel",
+      "features": {
+        "height": "open",
+        "backness": "front",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "open front rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ä̃",
+      "type": "vowel",
+      "features": {
+        "height": "open",
+        "backness": "central",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "open central unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɑ̃",
+      "type": "vowel",
+      "features": {
+        "height": "open",
+        "backness": "back",
+        "rounding": "unrounded",
+        "nasal": true
+      },
+      "name": "open back unrounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "ɒ̃",
+      "type": "vowel",
+      "features": {
+        "height": "open",
+        "backness": "back",
+        "rounding": "rounded",
+        "nasal": true
+      },
+      "name": "open back rounded nasal vowel",
+      "aliases": []
+    },
+    {
+      "letter": "dʱ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "aspirated plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced aspirated alveolar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "t͡ɬʼ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "lateral ejective affricate",
+        "voicing": "voiceless"
+      },
+      "name": "alveolar lateral ejective affricate",
+      "aliases": []
+    },
+    {
+      "letter": "ɬ’",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "lateral ejective fricative",
+        "voicing": "voiceless"
+      },
+      "name": "alveolar lateral ejective fricative",
+      "aliases": []
+    },
+    {
+      "letter": "t̪ʰ",
+      "type": "consonant",
+      "features": {
+        "place": "dental",
+        "manner": "aspirated plosive",
+        "voicing": "voiceless"
+      },
+      "name": "aspirated voiceless dental plosive",
+      "aliases": []
+    },
+    {
+      "letter": "tʰ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "aspirated plosive",
+        "voicing": "voiceless"
+      },
+      "name": "aspirated voiceless alveolar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "tʼ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "ejective",
+        "voicing": "voiceless"
+      },
+      "name": "alveolar ejective",
+      "aliases": []
+    },
+    {
+      "letter": "sʼ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "ejective fricative",
+        "voicing": "voiceless"
+      },
+      "name": "alveolar ejective fricative",
+      "aliases": []
+    },
+    {
+      "letter": "s",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolar fricative",
+      "aliases": []
+    },
+    {
+      "letter": "z",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced alveolar fricative",
+      "aliases": []
+    },
+    {
+      "letter": "ɗ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "implosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced alveolar implosive",
+      "aliases": []
+    },
+    {
+      "letter": "dʷ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "labialized plosive",
+        "voicing": "voiced"
+      },
+      "name": "labialized voiceless alveolar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "tʷ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "labialized plosive",
+        "voicing": "voiceless"
+      },
+      "name": "labialized voiceless alveolar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "lʲ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "palatalized lateral approximant",
+        "voicing": "voiced"
+      },
+      "name": "alveolar palatalized lateral approximant",
+      "aliases": []
+    },
+    {
+      "letter": "l̥",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "lateral approximant",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolar lateral approximant",
+      "aliases": []
+    },
+    {
+      "letter": "l",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "lateral approximant",
+        "voicing": "voiced"
+      },
+      "name": "alveolar lateral approximant",
+      "aliases": []
+    },
+    {
+      "letter": "ɬ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "lateral fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolar lateral fricative",
+      "aliases": []
+    },
+    {
+      "letter": "ɮ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "lateral fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced alveolar lateral fricative",
+      "aliases": []
+    },
+    {
+      "letter": "n",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "nasal",
+        "voicing": "voiced"
+      },
+      "name": "alveolar nasal",
+      "aliases": []
+    },
+    {
+      "letter": "ŋ̊",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "nasal",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless velar nasal",
+      "aliases": []
+    },
+    {
+      "letter": "n̥",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "nasal",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolar nasal",
+      "aliases": []
+    },
+    {
+      "letter": "d",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced alveolar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "t",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ɾ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "tap",
+        "voicing": "voiced"
+      },
+      "name": "alveolar tap",
+      "aliases": [
+        "flap"
+      ]
+    },
+    {
+      "letter": "r",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "trill",
+        "voicing": "voiced"
+      },
+      "name": "alveolar trill",
+      "aliases": []
+    },
+    {
+      "letter": "bʱ",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "aspirated plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced aspirated bilabial plosive",
+      "aliases": []
+    },
+    {
+      "letter": "pʰ",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "aspirated plosive",
+        "voicing": "voiceless"
+      },
+      "name": "aspirated voiceless bilabial plosive",
+      "aliases": []
+    },
+    {
+      "letter": "pʼ",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "ejective",
+        "voicing": "voiceless"
+      },
+      "name": "bilabial ejective",
+      "aliases": []
+    },
+    {
+      "letter": "ɸ",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiced bilabial fricative",
+      "aliases": [
+        "phi"
+      ]
+    },
+    {
+      "letter": "β",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced bilabial fricative",
+      "aliases": [
+        "beta"
+      ]
+    },
+    {
+      "letter": "ɓ",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "implosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced bilabial implosive",
+      "aliases": []
+    },
+    {
+      "letter": "bʷ",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "labialized plosive",
+        "voicing": "voiced"
+      },
+      "name": "labialized voiceless bilabial plosive",
+      "aliases": []
+    },
+    {
+      "letter": "pʷ",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "labialized plosive",
+        "voicing": "voiceless"
+      },
+      "name": "labialized voiceless bilabial plosive",
+      "aliases": []
+    },
+    {
+      "letter": "m",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "nasal",
+        "voicing": "voiced"
+      },
+      "name": "bilabial nasal",
+      "aliases": []
+    },
+    {
+      "letter": "m̥",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "nasal",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless bilabial nasal",
+      "aliases": []
+    },
+    {
+      "letter": "b",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced bilabial plosive",
+      "aliases": []
+    },
+    {
+      "letter": "b̪",
+      "type": "consonant",
+      "features": {
+        "place": "labiodental",
+        "manner": "plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced labiodental plosive",
+      "aliases": []
+    },
+    {
+      "letter": "p",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless bilabial plosive",
+      "aliases": []
+    },
+    {
+      "letter": "p̪",
+      "type": "consonant",
+      "features": {
+        "place": "labiodental",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless labiodental plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ʙ",
+      "type": "consonant",
+      "features": {
+        "place": "bilabial",
+        "manner": "trill",
+        "voicing": "voiced"
+      },
+      "name": "bilabial trill",
+      "aliases": [
+        "smallcapb"
+      ]
+    },
+    {
+      "letter": "ð",
+      "type": "consonant",
+      "features": {
+        "place": "dental",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced dental fricative",
+      "aliases": [
+        "eth"
+      ]
+    },
+    {
+      "letter": "θ",
+      "type": "consonant",
+      "features": {
+        "place": "dental",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless dental fricative",
+      "aliases": [
+        "theta"
+      ]
+    },
+    {
+      "letter": "d̪",
+      "type": "consonant",
+      "features": {
+        "place": "dental",
+        "manner": "plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced dental plosive",
+      "aliases": []
+    },
+    {
+      "letter": "t̪’",
+      "type": "consonant",
+      "features": {
+        "place": "dental",
+        "manner": "ejective",
+        "voicing": "voiceless"
+      },
+      "name": "dental ejective",
+      "aliases": []
+    },
+    {
+      "letter": "t̪",
+      "type": "consonant",
+      "features": {
+        "place": "dental",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless dental plosive",
+      "aliases": []
+    },
+    {
+      "letter": "h",
+      "type": "consonant",
+      "features": {
+        "place": "glottal",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless glottal fricative",
+      "aliases": []
+    },
+    {
+      "letter": "ʔ",
+      "type": "consonant",
+      "features": {
+        "place": "glottal",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "glottal plosive",
+      "aliases": [
+        "glottal"
+      ]
+    },
+    {
+      "letter": "ʋ",
+      "type": "consonant",
+      "features": {
+        "place": "labiodental",
+        "manner": "approximant",
+        "voicing": "voiced"
+      },
+      "name": "labiodental approximant",
+      "aliases": []
+    },
+    {
+      "letter": "f",
+      "type": "consonant",
+      "features": {
+        "place": "labiodental",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless labiodental fricative",
+      "aliases": []
+    },
+    {
+      "letter": "v",
+      "type": "consonant",
+      "features": {
+        "place": "labiodental",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced labiodental fricative",
+      "aliases": []
+    },
+    {
+      "letter": "ɱ",
+      "type": "consonant",
+      "features": {
+        "place": "labiodental",
+        "manner": "nasal",
+        "voicing": "voiced"
+      },
+      "name": "labiodental nasal",
+      "aliases": []
+    },
+    {
+      "letter": "ɱ̥",
+      "type": "consonant",
+      "features": {
+        "place": "labiodental",
+        "manner": "nasal",
+        "voicing": "voiceless"
+      },
+      "name": "labiodental nasal",
+      "aliases": []
+    },
+    {
+      "letter": "j̊",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "approximant",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless palatal approximant",
+      "aliases": []
+    },
+    {
+      "letter": "j",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "approximant",
+        "voicing": "voiced"
+      },
+      "name": "palatal approximant",
+      "aliases": []
+    },
+    {
+      "letter": "ç",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless palatal fricative",
+      "aliases": []
+    },
+    {
+      "letter": "ʝ",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced palatal fricative",
+      "aliases": []
+    },
+    {
+      "letter": "ʎ",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "lateral approximant",
+        "voicing": "voiced"
+      },
+      "name": "palatal lateral approximant",
+      "aliases": []
+    },
+    {
+      "letter": "ɲ",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "nasal",
+        "voicing": "voiced"
+      },
+      "name": "palatal nasal",
+      "aliases": [
+        "ntail"
+      ]
+    },
+    {
+      "letter": "c",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless palatal plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ɟ",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced palatal stop",
+      "aliases": []
+    },
+    {
+      "letter": "ʃ",
+      "type": "consonant",
+      "features": {
+        "place": "palato-alveolar",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless palato-alveolar fricative",
+      "aliases": [
+        "esh"
+      ]
+    },
+    {
+      "letter": "ʒ",
+      "type": "consonant",
+      "features": {
+        "place": "palato-alveolar",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced palato-alveolar fricative",
+      "aliases": [
+        "ezh"
+      ]
+    },
+    {
+      "letter": "ɽ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "flap",
+        "voicing": "voiced"
+      },
+      "name": "retroflex flap",
+      "aliases": []
+    },
+    {
+      "letter": "ʂ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless retroflex fricative",
+      "aliases": [
+        "shook",
+        "stail"
+      ]
+    },
+    {
+      "letter": "ʐ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced retroflex sibilant",
+      "aliases": [
+        "zretrohook"
+      ]
+    },
+    {
+      "letter": "ɭ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "lateral approximant",
+        "voicing": "voiced"
+      },
+      "name": "retroflex lateral approximant",
+      "aliases": []
+    },
+    {
+      "letter": "ɳ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "nasal",
+        "voicing": "voiced"
+      },
+      "name": "retroflex nasal",
+      "aliases": []
+    },
+    {
+      "letter": "ɖ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced retroflex plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ʈ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless retroflex plosive",
+      "aliases": []
+    },
+    {
+      "letter": "qʰ",
+      "type": "consonant",
+      "features": {
+        "place": "uvular",
+        "manner": "aspirated plosive",
+        "voicing": "voiceless"
+      },
+      "name": "aspirated voiceless uvular plosive",
+      "aliases": []
+    },
+    {
+      "letter": "qʼ",
+      "type": "consonant",
+      "features": {
+        "place": "uvular",
+        "manner": "ejective",
+        "voicing": "voiceless"
+      },
+      "name": "uvular ejective",
+      "aliases": []
+    },
+    {
+      "letter": "ʁ",
+      "type": "consonant",
+      "features": {
+        "place": "uvular",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced uvular fricative",
+      "aliases": []
+    },
+    {
+      "letter": "χ",
+      "type": "consonant",
+      "features": {
+        "place": "uvular",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless uvular fricative",
+      "aliases": [
+        "chi"
+      ]
+    },
+    {
+      "letter": "q",
+      "type": "consonant",
+      "features": {
+        "place": "uvular",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless uvular plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ɰ",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "approximant",
+        "voicing": "voiced"
+      },
+      "name": "velar approximant",
+      "aliases": []
+    },
+    {
+      "letter": "gʱ",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "aspirated plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced aspirated velar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "kʰ",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "aspirated plosive",
+        "voicing": "voiceless"
+      },
+      "name": "aspirated voiceless velar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "kʼ",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "ejective",
+        "voicing": "voiceless"
+      },
+      "name": "velar ejective",
+      "aliases": []
+    },
+    {
+      "letter": "ɣ",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced velar fricative",
+      "aliases": [
+        "gamma"
+      ]
+    },
+    {
+      "letter": "x",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless velar fricative",
+      "aliases": []
+    },
+    {
+      "letter": "ɠ",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "implosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced velar implosive",
+      "aliases": []
+    },
+    {
+      "letter": "gʷ",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "labialized plosive",
+        "voicing": "voiced"
+      },
+      "name": "labialized voiceless velar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "kʷ",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "labialized plosive",
+        "voicing": "voiceless"
+      },
+      "name": "labialized voiceless velar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ŋ",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "nasal",
+        "voicing": "voiced"
+      },
+      "name": "velar nasal",
+      "aliases": [
+        "velarnasal",
+        "eng",
+        "engma"
+      ]
+    },
+    {
+      "letter": "g",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced velar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "k",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless velar plosive",
+      "aliases": []
+    },
+    {
+      "letter": "kʲ",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "palatalized plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless velar palatalized plosive",
+      "aliases": []
+    },
+    {
+      "letter": "c’",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "ejective",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless palatal ejective",
+      "aliases": []
+    },
+    {
+      "letter": "cʰ",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "aspirated plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless palatal aspirated plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ɕ",
+      "type": "consonant",
+      "features": {
+        "place": "alveo-palatal",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolo-palatal fricative",
+      "aliases": [
+        "ccurl"
+      ]
+    },
+    {
+      "letter": "t͡ɕ",
+      "type": "consonant",
+      "features": {
+        "place": "alveo-palatal",
+        "manner": "affricate",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolo-palatal affricate",
+      "aliases": []
+    },
+    {
+      "letter": "d͡ʑ",
+      "type": "consonant",
+      "features": {
+        "place": "alveo-palatal",
+        "manner": "affricate",
+        "voicing": "voiced"
+      },
+      "name": "voiced alveolo-palatal affricate",
+      "aliases": []
+    },
+    {
+      "letter": "d͡z",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "affricate",
+        "voicing": "voiced"
+      },
+      "name": "voiced alveolar affricate",
+      "aliases": []
+    },
+    {
+      "letter": "d͡zʱ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "aspirated affricate",
+        "voicing": "voiced"
+      },
+      "name": "voiced aspirated alveolar affricate",
+      "aliases": []
+    },
+    {
+      "letter": "ɖ͡ʐ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "affricate",
+        "voicing": "voiced"
+      },
+      "name": "voiced retroflex affricate",
+      "aliases": []
+    },
+    {
+      "letter": "d͡ʒ",
+      "type": "consonant",
+      "features": {
+        "place": "palato-alveolar",
+        "manner": "affricate",
+        "voicing": "voiced"
+      },
+      "name": "voiced palato-alveolar affricate",
+      "aliases": []
+    },
+    {
+      "letter": "d͡ʒʱ",
+      "type": "consonant",
+      "features": {
+        "place": "palato-alveolar",
+        "manner": "aspirated affricate",
+        "voicing": "voiced"
+      },
+      "name": "voiced aspirated palato-alveolar affricate",
+      "aliases": []
+    },
+    {
+      "letter": "ɖʱ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "aspirated plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced aspirated retroflex plosive",
+      "aliases": []
+    },
+    {
+      "letter": "k͡p",
+      "type": "consonant",
+      "features": {
+        "place": "labial-velar",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless labial–velar stop",
+      "aliases": []
+    },
+    {
+      "letter": "g͡b",
+      "type": "consonant",
+      "features": {
+        "place": "labial-velar",
+        "manner": "plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced labial–velar stop",
+      "aliases": []
+    },
+    {
+      "letter": "ɢ",
+      "type": "consonant",
+      "features": {
+        "place": "uvular",
+        "manner": "plosive",
+        "voicing": "voiced"
+      },
+      "name": "voiced uvular plosive",
+      "aliases": [
+        "smallcapg"
+      ]
+    },
+    {
+      "letter": "ħ",
+      "type": "consonant",
+      "features": {
+        "place": "pharyngeal",
+        "manner": "fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless pharyngeal fricative",
+      "aliases": []
+    },
+    {
+      "letter": "ɦ",
+      "type": "consonant",
+      "features": {
+        "place": "glottal",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced glottal fricative",
+      "aliases": [
+        "hwithhook"
+      ]
+    },
+    {
+      "letter": "ʟ",
+      "type": "consonant",
+      "features": {
+        "place": "lateral",
+        "manner": "approximant",
+        "voicing": "voiced"
+      },
+      "name": "voiced velar lateral approximant",
+      "aliases": [
+        "smallcapl"
+      ]
+    },
+    {
+      "letter": "n̪",
+      "type": "consonant",
+      "features": {
+        "place": "dental",
+        "manner": "nasal",
+        "voicing": "voiced"
+      },
+      "name": "voiced dental nasal",
+      "aliases": []
+    },
+    {
+      "letter": "ɴ",
+      "type": "consonant",
+      "features": {
+        "place": "uvular",
+        "manner": "nasal",
+        "voicing": "voiced"
+      },
+      "name": "voiced uvular nasal",
+      "aliases": [
+        "smallcapn"
+      ]
+    },
+    {
+      "letter": "q’",
+      "type": "consonant",
+      "features": {
+        "place": "uvular",
+        "manner": "ejective",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless uvular ejective",
+      "aliases": []
+    },
+    {
+      "letter": "ʀ",
+      "type": "consonant",
+      "features": {
+        "place": "uvular",
+        "manner": "trill",
+        "voicing": "voiced"
+      },
+      "name": "uvular trill",
+      "aliases": [
+        "smallcapr"
+      ]
+    },
+    {
+      "letter": "r̥",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "approximant",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolar approximant",
+      "aliases": []
+    },
+    {
+      "letter": "ɹ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "approximant",
+        "voicing": "voiced"
+      },
+      "name": "voiced alveolar approximant",
+      "aliases": [
+        "turnedr"
+      ]
+    },
+    {
+      "letter": "ɻ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "approximant",
+        "voicing": "voiced"
+      },
+      "name": "voiced retroflex approximant",
+      "aliases": []
+    },
+    {
+      "letter": "s’",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "ejective fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolar ejective fricative",
+      "aliases": []
+    },
+    {
+      "letter": "ʃ’",
+      "type": "consonant",
+      "features": {
+        "place": "palatal",
+        "manner": "ejective fricative",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless palatal ejective fricative",
+      "aliases": []
+    },
+    {
+      "letter": "t͡s",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "affricate",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolar affricate",
+      "aliases": []
+    },
+    {
+      "letter": "t͡s’",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "ejective affricate",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolar ejective affricate",
+      "aliases": []
+    },
+    {
+      "letter": "t͡sʰ",
+      "type": "consonant",
+      "features": {
+        "place": "alveolar",
+        "manner": "aspirated affricate",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless alveolar aspirated affricate",
+      "aliases": []
+    },
+    {
+      "letter": "ʈ͡ʂ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "affricate",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless retroflex affricate",
+      "aliases": []
+    },
+    {
+      "letter": "t͡ʃ",
+      "type": "consonant",
+      "features": {
+        "place": "palato-alveolar",
+        "manner": "affricate",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless palato-alveolar affricate",
+      "aliases": [
+        "CH"
+      ]
+    },
+    {
+      "letter": "t͡ʃ’",
+      "type": "consonant",
+      "features": {
+        "place": "palato-alveolar",
+        "manner": "ejective affricate",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless palato-alveolar ejective affricate",
+      "aliases": []
+    },
+    {
+      "letter": "t͡ʃʰ",
+      "type": "consonant",
+      "features": {
+        "place": "palato-alveolar",
+        "manner": "aspirated affricate",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless palato-alveolar aspirated affricate",
+      "aliases": []
+    },
+    {
+      "letter": "ʈ’",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "ejective",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless retroflex ejective",
+      "aliases": []
+    },
+    {
+      "letter": "ʈʰ",
+      "type": "consonant",
+      "features": {
+        "place": "retroflex",
+        "manner": "aspirated plosive",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless retroflex aspirated plosive",
+      "aliases": []
+    },
+    {
+      "letter": "ɥ",
+      "type": "consonant",
+      "features": {
+        "place": "labialized palatal",
+        "manner": "approximant",
+        "voicing": "voiced"
+      },
+      "name": "labialized palatal approximant",
+      "aliases": []
+    },
+    {
+      "letter": "ʍ",
+      "type": "consonant",
+      "features": {
+        "place": "labial-velar",
+        "manner": "approximant",
+        "voicing": "voiceless"
+      },
+      "name": "voiceless labial-velar approximant",
+      "aliases": []
+    },
+    {
+      "letter": "w",
+      "type": "consonant",
+      "features": {
+        "place": "labial-velar",
+        "manner": "approximant",
+        "voicing": "voiced"
+      },
+      "name": "voiced labial-velar approximant",
+      "aliases": []
+    },
+    {
+      "letter": "wʰ",
+      "type": "consonant",
+      "features": {
+        "place": "labial-velar",
+        "manner": "aspirated approximant",
+        "voicing": "voiceless"
+      },
+      "name": "aspirated voiceless labial-velar approximant",
+      "aliases": []
+    },
+    {
+      "letter": "x’",
+      "type": "consonant",
+      "features": {
+        "place": "velar",
+        "manner": "ejective fricative",
+        "voicing": "voiceless"
+      },
+      "name": "velar ejective fricative",
+      "aliases": []
+    },
+    {
+      "letter": "ʑ",
+      "type": "consonant",
+      "features": {
+        "place": "alveo-palatal",
+        "manner": "fricative",
+        "voicing": "voiced"
+      },
+      "name": "voiced alveolo-palatal sibilant",
+      "aliases": [
+        "zcurl"
+      ]
+    },
+    {
+      "letter": "ʡ",
+      "type": "consonant",
+      "features": {
+        "place": "epiglottal",
+        "manner": "plosive",
+        "voicing": "voiceless"
+      },
+      "name": "epiglottal plosive",
+      "aliases": []
+    }
+  ],
+  "combiners": [
+    {
+      "letter": "b̵",
+      "type": "combiner",
+      "name": "barredb",
+      "aliases": [
+        "barredb"
+      ]
+    },
+    {
+      "letter": "̥",
+      "type": "combiner",
+      "name": "voiceless",
+      "aliases": [
+        "voiceless",
+        "ringbelow",
+        "circlebelow"
+      ]
+    },
+    {
+      "letter": "̂",
+      "type": "combiner",
+      "name": "circumflex",
+      "aliases": [
+        "circumflex",
+        "circ"
+      ]
+    },
+    {
+      "letter": "d̵",
+      "type": "combiner",
+      "name": "barredd",
+      "aliases": [
+        "barredd"
+      ]
+    },
+    {
+      "letter": "¢",
+      "type": "combiner",
+      "name": "cent",
+      "aliases": [
+        "cent"
+      ]
+    },
+    {
+      "letter": "‘",
+      "type": "combiner",
+      "name": "lquote",
+      "aliases": [
+        "lquote"
+      ]
+    },
+    {
+      "letter": "’",
+      "type": "combiner",
+      "name": "rquote",
+      "aliases": [
+        "rquote"
+      ]
+    },
+    {
+      "letter": "”",
+      "type": "combiner",
+      "name": "rdoublequote",
+      "aliases": [
+        "rdoublequote"
+      ]
+    },
+    {
+      "letter": "“",
+      "type": "combiner",
+      "name": "ldoublequote",
+      "aliases": [
+        "ldoublequote"
+      ]
+    },
+    {
+      "letter": "̣",
+      "type": "combiner",
+      "name": "dotbelow",
+      "aliases": [
+        "dotbelow"
+      ]
+    },
+    {
+      "letter": "̃",
+      "type": "combiner",
+      "name": "tilde",
+      "aliases": [
+        "tilde",
+        "~"
+      ]
+    },
+    {
+      "letter": "·",
+      "type": "combiner",
+      "name": "middot",
+      "aliases": [
+        "middot"
+      ]
+    },
+    {
+      "letter": "̌",
+      "type": "combiner",
+      "name": "caron",
+      "aliases": [
+        "caron",
+        "hacek"
+      ]
+    },
+    {
+      "letter": "∅",
+      "type": "combiner",
+      "name": "null",
+      "aliases": [
+        "null",
+        "emptyset"
+      ]
+    },
+    {
+      "letter": "̆",
+      "type": "combiner",
+      "name": "breve",
+      "aliases": [
+        "breve"
+      ]
+    },
+    {
+      "letter": "̩",
+      "type": "combiner",
+      "name": "syllabic",
+      "aliases": [
+        "syllabic",
+        "linebelow"
+      ]
+    },
+    {
+      "letter": "ɚ",
+      "type": "combiner",
+      "name": "err",
+      "aliases": [
+        "err",
+        "schwar"
+      ]
+    },
+    {
+      "letter": "ǥ",
+      "type": "combiner",
+      "name": "gstroke",
+      "aliases": [
+        "gstroke",
+        "barredg"
+      ]
+    },
+    {
+      "letter": "ˈ",
+      "type": "combiner",
+      "name": "stress",
+      "aliases": [
+        "stress"
+      ]
+    },
+    {
+      "letter": "→",
+      "type": "combiner",
+      "name": ">",
+      "aliases": [
+        ">",
+        "rarr"
+      ]
+    },
+    {
+      "letter": "↖",
+      "type": "combiner",
+      "name": "nwarr",
+      "aliases": [
+        "nwarr"
+      ]
+    },
+    {
+      "letter": "↗",
+      "type": "combiner",
+      "name": "nearr",
+      "aliases": [
+        "nearr"
+      ]
+    },
+    {
+      "letter": "↘",
+      "type": "combiner",
+      "name": "searr",
+      "aliases": [
+        "searr"
+      ]
+    },
+    {
+      "letter": "↙",
+      "type": "combiner",
+      "name": "swarr",
+      "aliases": [
+        "swarr"
+      ]
+    },
+    {
+      "letter": "←",
+      "type": "combiner",
+      "name": "<",
+      "aliases": [
+        "<",
+        "larr"
+      ]
+    },
+    {
+      "letter": "ʰ",
+      "type": "combiner",
+      "name": "raisedh",
+      "aliases": [
+        "raisedh",
+        "raisedh"
+      ]
+    },
+    {
+      "letter": "ʸ",
+      "type": "combiner",
+      "name": "raisedy",
+      "aliases": [
+        "raisedy",
+        "raisedy"
+      ]
+    },
+    {
+      "letter": "ł",
+      "type": "combiner",
+      "name": "lstroke",
+      "aliases": [
+        "lstroke",
+        "lwithstroke"
+      ]
+    },
+    {
+      "letter": "ᴀ",
+      "type": "combiner",
+      "name": "smallcapa",
+      "aliases": [
+        "smallcapa",
+        "smallcapa",
+        "smallcapA",
+        "smallcapA"
+      ]
+    },
+    {
+      "letter": "′",
+      "type": "combiner",
+      "name": "prime",
+      "aliases": [
+        "prime"
+      ]
+    },
+    {
+      "letter": "̄",
+      "type": "combiner",
+      "name": "macron",
+      "aliases": [
+        "macron"
+      ]
+    },
+    {
+      "letter": "̱",
+      "type": "combiner",
+      "name": "macronbelow",
+      "aliases": [
+        "macronbelow"
+      ]
+    },
+    {
+      "letter": "Ł",
+      "type": "combiner",
+      "name": "biglstroke",
+      "aliases": [
+        "biglstroke"
+      ]
+    },
+    {
+      "letter": "ᴄ",
+      "type": "combiner",
+      "name": "smallcapc",
+      "aliases": [
+        "smallcapc"
+      ]
+    },
+    {
+      "letter": "ᴅ",
+      "type": "combiner",
+      "name": "smallcapd",
+      "aliases": [
+        "smallcapd"
+      ]
+    },
+    {
+      "letter": "ᴇ",
+      "type": "combiner",
+      "name": "smallcape",
+      "aliases": [
+        "smallcape"
+      ]
+    },
+    {
+      "letter": "ꜰ",
+      "type": "combiner",
+      "name": "smallcapf",
+      "aliases": [
+        "smallcapf"
+      ]
+    },
+    {
+      "letter": "ʜ",
+      "type": "combiner",
+      "name": "smallcaph",
+      "aliases": [
+        "smallcaph"
+      ]
+    },
+    {
+      "letter": "ᴊ",
+      "type": "combiner",
+      "name": "smallcapj",
+      "aliases": [
+        "smallcapj"
+      ]
+    },
+    {
+      "letter": "ᴋ",
+      "type": "combiner",
+      "name": "smallcapk",
+      "aliases": [
+        "smallcapk"
+      ]
+    },
+    {
+      "letter": "ᴍ",
+      "type": "combiner",
+      "name": "smallcapm",
+      "aliases": [
+        "smallcapm"
+      ]
+    },
+    {
+      "letter": "ᴏ",
+      "type": "combiner",
+      "name": "smallcapo",
+      "aliases": [
+        "smallcapo"
+      ]
+    },
+    {
+      "letter": "ᴘ",
+      "type": "combiner",
+      "name": "smallcapp",
+      "aliases": [
+        "smallcapp"
+      ]
+    },
+    {
+      "letter": " ",
+      "type": "combiner",
+      "name": "smallcapq",
+      "aliases": [
+        "smallcapq"
+      ]
+    },
+    {
+      "letter": "ꜱ",
+      "type": "combiner",
+      "name": "smallcaps",
+      "aliases": [
+        "smallcaps"
+      ]
+    },
+    {
+      "letter": "ᴛ",
+      "type": "combiner",
+      "name": "smallcapt",
+      "aliases": [
+        "smallcapt"
+      ]
+    },
+    {
+      "letter": "ᴜ",
+      "type": "combiner",
+      "name": "smallcapu",
+      "aliases": [
+        "smallcapu"
+      ]
+    },
+    {
+      "letter": "ᴠ",
+      "type": "combiner",
+      "name": "smallcapv",
+      "aliases": [
+        "smallcapv"
+      ]
+    },
+    {
+      "letter": "ᴡ",
+      "type": "combiner",
+      "name": "smallcapw",
+      "aliases": [
+        "smallcapw"
+      ]
+    },
+    {
+      "letter": "ᴢ",
+      "type": "combiner",
+      "name": "smallcapz",
+      "aliases": [
+        "smallcapz"
+      ]
+    },
+    {
+      "letter": "–",
+      "type": "combiner",
+      "name": "endash",
+      "aliases": [
+        "endash"
+      ]
+    },
+    {
+      "letter": "̓",
+      "type": "combiner",
+      "name": "commaabove",
+      "aliases": [
+        "commaabove"
+      ]
+    },
+    {
+      "letter": "ʻ",
+      "type": "combiner",
+      "name": "okina",
+      "aliases": [
+        "okina"
+      ]
+    },
+    {
+      "letter": "…",
+      "type": "combiner",
+      "name": "ellipsis",
+      "aliases": [
+        "ellipsis"
+      ]
+    },
+    {
+      "letter": "¿",
+      "type": "combiner",
+      "name": "question",
+      "aliases": [
+        "question",
+        "invertedquestion"
+      ]
+    },
+    {
+      "letter": "—",
+      "type": "combiner",
+      "name": "emdash",
+      "aliases": [
+        "emdash"
+      ]
+    },
+    {
+      "letter": "ˀ",
+      "type": "combiner",
+      "name": "raisedglottal",
+      "aliases": [
+        "raisedglottal"
+      ]
+    },
+    {
+      "letter": "́",
+      "type": "combiner",
+      "name": "acute",
+      "aliases": [
+        "acute"
+      ]
+    },
+    {
+      "letter": "̀",
+      "type": "combiner",
+      "name": "grave",
+      "aliases": [
+        "grave",
+        "`"
+      ]
+    },
+    {
+      "letter": "²",
+      "type": "combiner",
+      "name": "raised2",
+      "aliases": [
+        "raised2"
+      ]
+    },
+    {
+      "letter": "₁",
+      "type": "combiner",
+      "name": "sub1",
+      "aliases": [
+        "sub1"
+      ]
+    },
+    {
+      "letter": "₂",
+      "type": "combiner",
+      "name": "sub2",
+      "aliases": [
+        "sub2",
+        "subscript2"
+      ]
+    },
+    {
+      "letter": "₃",
+      "type": "combiner",
+      "name": "sub3",
+      "aliases": [
+        "sub3"
+      ]
+    },
+    {
+      "letter": "₄",
+      "type": "combiner",
+      "name": "sub4",
+      "aliases": [
+        "sub4"
+      ]
+    },
+    {
+      "letter": "³",
+      "type": "combiner",
+      "name": "raised3",
+      "aliases": [
+        "raised3"
+      ]
+    },
+    {
+      "letter": "¹",
+      "type": "combiner",
+      "name": "raised1",
+      "aliases": [
+        "raised1"
+      ]
+    },
+    {
+      "letter": "ʲ",
+      "type": "combiner",
+      "name": "raisedj",
+      "aliases": [
+        "raisedj"
+      ]
+    },
+    {
+      "letter": "ʳ",
+      "type": "combiner",
+      "name": "raisedr",
+      "aliases": [
+        "raisedr"
+      ]
+    },
+    {
+      "letter": "ʷ",
+      "type": "combiner",
+      "name": "raisedw",
+      "aliases": [
+        "raisedw"
+      ]
+    },
+    {
+      "letter": "ˡ",
+      "type": "combiner",
+      "name": "raisedl",
+      "aliases": [
+        "raisedl"
+      ]
+    },
+    {
+      "letter": "ˢ",
+      "type": "combiner",
+      "name": "raiseds",
+      "aliases": [
+        "raiseds"
+      ]
+    },
+    {
+      "letter": "ˣ",
+      "type": "combiner",
+      "name": "raisedx",
+      "aliases": [
+        "raisedx"
+      ]
+    },
+    {
+      "letter": "ᴬ",
+      "type": "combiner",
+      "name": "raisedA",
+      "aliases": [
+        "raisedA"
+      ]
+    },
+    {
+      "letter": "ᴮ",
+      "type": "combiner",
+      "name": "raisedB",
+      "aliases": [
+        "raisedB"
+      ]
+    },
+    {
+      "letter": "ᴰ",
+      "type": "combiner",
+      "name": "raisedD",
+      "aliases": [
+        "raisedD"
+      ]
+    },
+    {
+      "letter": "ᴱ",
+      "type": "combiner",
+      "name": "raisedE",
+      "aliases": [
+        "raisedE"
+      ]
+    },
+    {
+      "letter": "ᴳ",
+      "type": "combiner",
+      "name": "raisedG",
+      "aliases": [
+        "raisedG"
+      ]
+    },
+    {
+      "letter": "ᴴ",
+      "type": "combiner",
+      "name": "raisedH",
+      "aliases": [
+        "raisedH"
+      ]
+    },
+    {
+      "letter": "ᴵ",
+      "type": "combiner",
+      "name": "raisedI",
+      "aliases": [
+        "raisedI"
+      ]
+    },
+    {
+      "letter": "ᴶ",
+      "type": "combiner",
+      "name": "raisedJ",
+      "aliases": [
+        "raisedJ"
+      ]
+    },
+    {
+      "letter": "ᴷ",
+      "type": "combiner",
+      "name": "raisedK",
+      "aliases": [
+        "raisedK"
+      ]
+    },
+    {
+      "letter": "ᴸ",
+      "type": "combiner",
+      "name": "raisedL",
+      "aliases": [
+        "raisedL"
+      ]
+    },
+    {
+      "letter": "ᴹ",
+      "type": "combiner",
+      "name": "raisedM",
+      "aliases": [
+        "raisedM"
+      ]
+    },
+    {
+      "letter": "ᴺ",
+      "type": "combiner",
+      "name": "raisedN",
+      "aliases": [
+        "raisedN"
+      ]
+    },
+    {
+      "letter": "ᴼ",
+      "type": "combiner",
+      "name": "raisedO",
+      "aliases": [
+        "raisedO"
+      ]
+    },
+    {
+      "letter": "ᴾ",
+      "type": "combiner",
+      "name": "raisedP",
+      "aliases": [
+        "raisedP"
+      ]
+    },
+    {
+      "letter": "ᴿ",
+      "type": "combiner",
+      "name": "raisedR",
+      "aliases": [
+        "raisedR"
+      ]
+    },
+    {
+      "letter": "ᵀ",
+      "type": "combiner",
+      "name": "raisedT",
+      "aliases": [
+        "raisedT"
+      ]
+    },
+    {
+      "letter": "ᵁ",
+      "type": "combiner",
+      "name": "raisedU",
+      "aliases": [
+        "raisedU"
+      ]
+    },
+    {
+      "letter": "ᵂ",
+      "type": "combiner",
+      "name": "raisedW",
+      "aliases": [
+        "raisedW"
+      ]
+    },
+    {
+      "letter": "ᵃ",
+      "type": "combiner",
+      "name": "raiseda",
+      "aliases": [
+        "raiseda"
+      ]
+    },
+    {
+      "letter": "ᵇ",
+      "type": "combiner",
+      "name": "raisedb",
+      "aliases": [
+        "raisedb"
+      ]
+    },
+    {
+      "letter": "ᵈ",
+      "type": "combiner",
+      "name": "raisedd",
+      "aliases": [
+        "raisedd"
+      ]
+    },
+    {
+      "letter": "ᵉ",
+      "type": "combiner",
+      "name": "raisede",
+      "aliases": [
+        "raisede"
+      ]
+    },
+    {
+      "letter": "ᵍ",
+      "type": "combiner",
+      "name": "raisedg",
+      "aliases": [
+        "raisedg"
+      ]
+    },
+    {
+      "letter": "ᵏ",
+      "type": "combiner",
+      "name": "raisedk",
+      "aliases": [
+        "raisedk"
+      ]
+    },
+    {
+      "letter": "ᵐ",
+      "type": "combiner",
+      "name": "raisedm",
+      "aliases": [
+        "raisedm"
+      ]
+    },
+    {
+      "letter": "ᵒ",
+      "type": "combiner",
+      "name": "raisedo",
+      "aliases": [
+        "raisedo"
+      ]
+    },
+    {
+      "letter": "ᵖ",
+      "type": "combiner",
+      "name": "raisedp",
+      "aliases": [
+        "raisedp"
+      ]
+    },
+    {
+      "letter": "ᵗ",
+      "type": "combiner",
+      "name": "raisedt",
+      "aliases": [
+        "raisedt"
+      ]
+    },
+    {
+      "letter": "ᵘ",
+      "type": "combiner",
+      "name": "raisedu",
+      "aliases": [
+        "raisedu"
+      ]
+    },
+    {
+      "letter": "ᵛ",
+      "type": "combiner",
+      "name": "raisedv",
+      "aliases": [
+        "raisedv"
+      ]
+    },
+    {
+      "letter": "ᶜ",
+      "type": "combiner",
+      "name": "raisedc",
+      "aliases": [
+        "raisedc"
+      ]
+    },
+    {
+      "letter": "ᶠ",
+      "type": "combiner",
+      "name": "raisedf",
+      "aliases": [
+        "raisedf"
+      ]
+    },
+    {
+      "letter": "ᶻ",
+      "type": "combiner",
+      "name": "raisedz",
+      "aliases": [
+        "raisedz"
+      ]
+    },
+    {
+      "letter": "⁰",
+      "type": "combiner",
+      "name": "raised0",
+      "aliases": [
+        "raised0"
+      ]
+    },
+    {
+      "letter": "ⁱ",
+      "type": "combiner",
+      "name": "raised1",
+      "aliases": [
+        "raised1",
+        "raisedi"
+      ]
+    },
+    {
+      "letter": "⁴",
+      "type": "combiner",
+      "name": "raised4",
+      "aliases": [
+        "raised4"
+      ]
+    },
+    {
+      "letter": "⁵",
+      "type": "combiner",
+      "name": "raised5",
+      "aliases": [
+        "raised5"
+      ]
+    },
+    {
+      "letter": "⁶",
+      "type": "combiner",
+      "name": "raised6",
+      "aliases": [
+        "raised6"
+      ]
+    },
+    {
+      "letter": "⁷",
+      "type": "combiner",
+      "name": "raised7",
+      "aliases": [
+        "raised7"
+      ]
+    },
+    {
+      "letter": "⁸",
+      "type": "combiner",
+      "name": "raised8",
+      "aliases": [
+        "raised8"
+      ]
+    },
+    {
+      "letter": "⁹",
+      "type": "combiner",
+      "name": "raised9",
+      "aliases": [
+        "raised9"
+      ]
+    },
+    {
+      "letter": "ⁿ",
+      "type": "combiner",
+      "name": "raisedn",
+      "aliases": [
+        "raisedn"
+      ]
+    },
+    {
+      "letter": "₀",
+      "type": "combiner",
+      "name": "raisedtheta",
+      "aliases": [
+        "raisedtheta"
+      ]
+    },
+    {
+      "letter": "ⱽ",
+      "type": "combiner",
+      "name": "raisedV",
+      "aliases": [
+        "raisedV"
+      ]
+    },
+    {
+      "letter": "☑",
+      "type": "combiner",
+      "name": "checkbox",
+      "aliases": [
+        "checkbox",
+        "checkballot"
+      ]
+    },
+    {
+      "letter": "☺",
+      "type": "combiner",
+      "name": "smile",
+      "aliases": [
+        "smile"
+      ]
+    },
+    {
+      "letter": "இ",
+      "type": "combiner",
+      "name": "snake",
+      "aliases": [
+        "snake"
+      ]
+    },
+    {
+      "letter": "☐",
+      "type": "combiner",
+      "name": "ballot",
+      "aliases": [
+        "ballot"
+      ]
+    },
+    {
+      "letter": "⃞",
+      "type": "combiner",
+      "name": "enclose",
+      "aliases": [
+        "enclose"
+      ]
+    },
+    {
+      "letter": "ː",
+      "type": "combiner",
+      "name": "long",
+      "aliases": [
+        "long"
+      ]
+    },
+    {
+      "letter": "§",
+      "type": "combiner",
+      "name": "section",
+      "aliases": [
+        "section",
+        "section"
+      ]
+    },
+    {
+      "letter": "ᵽ",
+      "type": "combiner",
+      "name": "barredp",
+      "aliases": [
+        "barredp"
+      ]
+    },
+    {
+      "letter": "Ᵽ",
+      "type": "combiner",
+      "name": "barredP",
+      "aliases": [
+        "barredP"
+      ]
+    },
+    {
+      "letter": "Ǥ",
+      "type": "combiner",
+      "name": "barredG",
+      "aliases": [
+        "barredG"
+      ]
+    },
+    {
+      "letter": "͡",
+      "type": "combiner",
+      "name": "combiner",
+      "aliases": [
+        "combiner",
+        "tie"
+      ]
+    },
+    {
+      "letter": "̨",
+      "type": "combiner",
+      "name": "ogonek",
+      "aliases": [
+        "ogonek"
+      ]
+    },
+    {
+      "letter": "↑",
+      "type": "combiner",
+      "name": "uparr",
+      "aliases": [
+        "uparr"
+      ]
+    },
+    {
+      "letter": "↓",
+      "type": "combiner",
+      "name": "downarr",
+      "aliases": [
+        "downarr"
+      ]
+    },
+    {
+      "letter": "ᵑ",
+      "type": "combiner",
+      "name": "raisedeng",
+      "aliases": [
+        "raisedeng"
+      ]
+    },
+    {
+      "letter": "̲",
+      "type": "combiner",
+      "name": "underline",
+      "aliases": [
+        "underline"
+      ]
+    },
+    {
+      "letter": "᷂",
+      "type": "combiner",
+      "name": "snake",
+      "aliases": [
+        "snake"
+      ]
+    },
+    {
+      "letter": "✈",
+      "type": "combiner",
+      "name": "airplane",
+      "aliases": [
+        "airplane",
+        "plane"
+      ]
+    },
+    {
+      "letter": "̪",
+      "type": "combiner",
+      "name": "dental",
+      "aliases": [
+        "dental",
+        "bridgebelow"
+      ]
+    },
+    {
+      "letter": "◌",
+      "type": "combiner",
+      "name": "dottedcircle",
+      "aliases": [
+        "dottedcircle"
+      ]
+    },
+    {
+      "letter": "✗",
+      "type": "combiner",
+      "name": "ballotx",
+      "aliases": [
+        "ballotx"
+      ]
+    },
+    {
+      "letter": "✓",
+      "type": "combiner",
+      "name": "check",
+      "aliases": [
+        "check"
+      ]
+    },
+    {
+      "letter": "™",
+      "type": "combiner",
+      "name": "trademark",
+      "aliases": [
+        "trademark",
+        "tm"
+      ]
+    },
+    {
+      "letter": "®",
+      "type": "combiner",
+      "name": "registered",
+      "aliases": [
+        "registered"
+      ]
+    },
+    {
+      "letter": "†",
+      "type": "combiner",
+      "name": "dagger",
+      "aliases": [
+        "dagger"
+      ]
+    },
+    {
+      "letter": "ʾ",
+      "type": "combiner",
+      "name": "halfring",
+      "aliases": [
+        "halfring"
+      ]
+    },
+    {
+      "letter": "×",
+      "type": "combiner",
+      "name": "multiply",
+      "aliases": [
+        "multiply"
+      ]
+    },
+    {
+      "letter": "ˑ",
+      "type": "combiner",
+      "name": "halflong",
+      "aliases": [
+        "halflong"
+      ]
+    },
+    {
+      "letter": "♥",
+      "type": "combiner",
+      "name": "heart",
+      "aliases": [
+        "heart"
+      ]
+    },
+    {
+      "letter": "½",
+      "type": "combiner",
+      "name": "half",
+      "aliases": [
+        "half"
+      ]
+    },
+    {
+      "letter": "✕",
+      "type": "combiner",
+      "name": "mult",
+      "aliases": [
+        "mult"
+      ]
+    },
+    {
+      "letter": "⊆",
+      "type": "combiner",
+      "name": "subsetOrEqual",
+      "aliases": [
+        "subsetOrEqual"
+      ]
+    },
+    {
+      "letter": "𝛴",
+      "type": "combiner",
+      "name": "italicSigma",
+      "aliases": [
+        "italicSigma"
+      ]
+    },
+    {
+      "letter": "∈",
+      "type": "combiner",
+      "name": "thereExists",
+      "aliases": [
+        "thereExists"
+      ]
+    },
+    {
+      "letter": "°",
+      "type": "combiner",
+      "name": "degree",
+      "aliases": [
+        "degree",
+        "degree"
+      ]
+    },
+    {
+      "letter": "δ",
+      "type": "combiner",
+      "name": "delta",
+      "aliases": [
+        "delta"
+      ]
+    },
+    {
+      "letter": "ȵ",
+      "type": "combiner",
+      "name": "ncurl",
+      "aliases": [
+        "ncurl"
+      ]
+    },
+    {
+      "letter": "★",
+      "type": "combiner",
+      "name": "star",
+      "aliases": [
+        "star"
+      ]
+    },
+    {
+      "letter": "̙",
+      "type": "combiner",
+      "name": "righttack",
+      "aliases": [
+        "righttack"
+      ]
+    },
+    {
+      "letter": "̘",
+      "type": "combiner",
+      "name": "lefttack",
+      "aliases": [
+        "lefttack"
+      ]
+    },
+    {
+      "letter": "λ",
+      "type": "combiner",
+      "name": "lambda",
+      "aliases": [
+        "lambda",
+        "lambda"
+      ]
+    },
+    {
+      "letter": "U+03BB",
+      "type": "combiner",
+      "name": "lambda",
+      "aliases": [
+        "lambda"
+      ]
+    },
+    {
+      "letter": "ı",
+      "type": "combiner",
+      "name": "dotlessi",
+      "aliases": [
+        "dotlessi"
+      ]
+    },
+    {
+      "letter": "̮",
+      "type": "combiner",
+      "name": "brevebelow",
+      "aliases": [
+        "brevebelow"
+      ]
+    },
+    {
+      "letter": "⚙",
+      "type": "combiner",
+      "name": "gear",
+      "aliases": [
+        "gear"
+      ]
+    },
+    {
+      "letter": "̊",
+      "type": "combiner",
+      "name": "circleabove",
+      "aliases": [
+        "circleabove"
+      ]
+    },
+    {
+      "letter": "̦",
+      "type": "combiner",
+      "name": "commabelow",
+      "aliases": [
+        "commabelow"
+      ]
+    }
+  ]
+}

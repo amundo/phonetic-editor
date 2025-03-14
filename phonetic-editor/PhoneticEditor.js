@@ -65,7 +65,8 @@ export class PhoneticEditor extends HTMLElement {
   async loadData() {
     try {
       // Load IPA data
-      const ipaResponse = await fetch('ipa.json');
+      const url = new URL('ipa.json', import.meta.url);
+      const ipaResponse = await fetch(url);
       this._ipaData = await ipaResponse.json();
       
       // Load alias data
