@@ -1,0 +1,554 @@
+{
+  "metadata": {
+    "title": "Typeit.org IPA mnemonics",
+    "howto": "I copied the relevant HTML manuarlly because it is generated with JS on the site. Thensaved to typeit.org-ipa.html"
+  },
+  "characters": [
+    {
+      "name": "a script",
+      "title": "open back unrounded vowel (Ctrl+A)",
+      "character": "ɑ",
+      "like": "A"
+    },
+    {
+      "name": "ae ipa",
+      "title": "near-open front unrounded vowel (Ctrl+AA)",
+      "character": "æ",
+      "like": "A"
+    },
+    {
+      "name": "a upside",
+      "title": "near-open central vowel (Ctrl+AAA)",
+      "character": "ɐ",
+      "like": "A"
+    },
+    {
+      "name": "a script nasalized",
+      "title": "nasalized open back unrounded vowel (Ctrl+AAAA)",
+      "character": "ɑ̃",
+      "like": "A"
+    },
+    {
+      "name": "beta ipa",
+      "title": "voiced bilabial fricative (Ctrl+B)",
+      "character": "β",
+      "like": "B"
+    },
+    {
+      "name": "b hook",
+      "title": "voiced bilabial implosive (Ctrl+BB)",
+      "character": "ɓ",
+      "like": "B"
+    },
+    {
+      "name": "B small",
+      "title": "bilabial trill (Ctrl+BBB)",
+      "character": "ʙ",
+      "like": "B"
+    },
+    {
+      "name": "c cedil ipa",
+      "title": "voiceless palatal fricative (Ctrl+C)",
+      "character": "ç",
+      "like": "C"
+    },
+    {
+      "name": "c loop",
+      "title": "voiceless alveo-palatal fricative (Ctrl+CC)",
+      "character": "ɕ",
+      "like": "C"
+    },
+    {
+      "name": "eth ipa",
+      "title": "voiced dental fricative (Ctrl+D)",
+      "character": "ð",
+      "like": "D"
+    },
+    {
+      "name": "dzh",
+      "title": "voiced postalveolar affricate (Ctrl+DD)",
+      "character": "d͡ʒ",
+      "like": "D"
+    },
+    {
+      "name": "d hook low",
+      "title": "voiced retroflex plosive (Ctrl+DDD)",
+      "character": "ɖ",
+      "like": "D"
+    },
+    {
+      "name": "d hook high",
+      "title": "voiced alveolar implosive (Ctrl+DDDD)",
+      "character": "ɗ",
+      "like": "D"
+    },
+    {
+      "name": "schwa",
+      "title": "mid-central vowel (Ctrl+E)",
+      "character": "ə",
+      "like": "E"
+    },
+    {
+      "name": "schwa rhotic",
+      "title": "rhotacized mid-central vowel (Ctrl+EE)",
+      "character": "ɚ",
+      "like": "E"
+    },
+    {
+      "name": "schwa closed",
+      "title": "close-mid central rounded vowel (Ctrl+EEE)",
+      "character": "ɵ",
+      "like": "E"
+    },
+    {
+      "name": "schwa upside",
+      "title": "close-mid central unrounded vowel (Ctrl+EEEE)",
+      "character": "ɘ",
+      "like": "E"
+    },
+    {
+      "name": "epsilon ipa",
+      "title": "open-mid front unrounded vowel (Ctrl+3)",
+      "character": "ɛ",
+      "like": "3"
+    },
+    {
+      "name": "epsilon flipped",
+      "title": "open-mid central unrounded vowel (Ctrl+33)",
+      "character": "ɜ",
+      "like": "3"
+    },
+    {
+      "name": "epsilon flipped rhotic",
+      "title": "rhotacized open-mid central unrounded vowel (Ctrl+333)",
+      "character": "ɝ",
+      "like": "3"
+    },
+    {
+      "name": "epsilon nasalized",
+      "title": "nasalized open-mid front unrounded vowel (Ctrl+3333)",
+      "character": "ɛ̃",
+      "like": "3"
+    },
+    {
+      "name": "epsilon flipped closed",
+      "title": "open-mid central rounded vowel (Ctrl+33333)",
+      "character": "ɞ",
+      "like": "3"
+    },
+    {
+      "name": "g hook",
+      "title": "voiced velar implosive (Ctrl+G)",
+      "character": "ɠ",
+      "like": "G"
+    },
+    {
+      "name": "G small",
+      "title": "voiced uvular plosive (Ctrl+GG)",
+      "character": "ɢ",
+      "like": "G"
+    },
+    {
+      "name": "G small hook",
+      "title": "voiced uvular implosive (Ctrl+GGG)",
+      "character": "ʛ",
+      "like": "G"
+    },
+    {
+      "name": "g script",
+      "title": "script g (Ctrl+GGGG) (note that regular g is officially accepted by the IPA, so you shouldn’t need this)",
+      "character": "ɡ",
+      "like": "G"
+    },
+    {
+      "name": "h barred",
+      "title": "voiceless pharyngeal fricative (Ctrl+H)",
+      "character": "ħ",
+      "like": "H"
+    },
+    {
+      "name": "h hook",
+      "title": "voiced glottal fricative (Ctrl+HH)",
+      "character": "ɦ",
+      "like": "H"
+    },
+    {
+      "name": "h upside",
+      "title": "labial-palatal approximant (Ctrl+HHH)",
+      "character": "ɥ",
+      "like": "H"
+    },
+    {
+      "name": "h low hook",
+      "title": "Sje-sound (Ctrl+HHHH)",
+      "character": "ɧ",
+      "like": "H"
+    },
+    {
+      "name": "H small",
+      "title": "voiceless epiglottal fricative (Ctrl+HHHHH)",
+      "character": "ʜ",
+      "like": "H"
+    },
+    {
+      "name": "I small",
+      "title": "near-close near-front unrounded vowel (Ctrl+I)",
+      "character": "ɪ",
+      "like": "I"
+    },
+    {
+      "name": "i barred",
+      "title": "close central unrounded vowel (Ctrl+II)",
+      "character": "ɨ",
+      "like": "I"
+    },
+    {
+      "name": "schwi",
+      "title": "near-close central unrounded vowel (Ctrl+III)",
+      "character": "ɪ̈",
+      "like": "I"
+    },
+    {
+      "name": "j loop",
+      "title": "voiced palatal fricative (Ctrl+J)",
+      "character": "ʝ",
+      "like": "J"
+    },
+    {
+      "name": "j barred",
+      "title": "voiced palatal plosive (Ctrl+JJ)",
+      "character": "ɟ",
+      "like": "J"
+    },
+    {
+      "name": "j mirrored",
+      "title": "voiced palatal implosive (Ctrl+JJJ)",
+      "character": "ʄ",
+      "like": "J"
+    },
+    {
+      "name": "l wave",
+      "title": "velarized alveolar lateral approximant (Ctrl+L)",
+      "character": "ɫ",
+      "like": "L"
+    },
+    {
+      "name": "l long",
+      "title": "retroflex lateral approximant (Ctrl+LL)",
+      "character": "ɭ",
+      "like": "L"
+    },
+    {
+      "name": "l loop",
+      "title": "voiceless alveolar lateral fricative (Ctrl+LLL)",
+      "character": "ɬ",
+      "like": "L"
+    },
+    {
+      "name": "L small",
+      "title": "velar lateral approximant (Ctrl+LLLL)",
+      "character": "ʟ",
+      "like": "L"
+    },
+    {
+      "name": "lzh",
+      "title": "voiced alveolar lateral fricative (Ctrl+LLLLL)",
+      "character": "ɮ",
+      "like": "L"
+    },
+    {
+      "name": "m hook",
+      "title": "labiodental nasal (Ctrl+M)",
+      "character": "ɱ",
+      "like": "M"
+    },
+    {
+      "name": "ng",
+      "title": "velar nasal (Ctrl+N)",
+      "character": "ŋ",
+      "like": "N"
+    },
+    {
+      "name": "n hook left",
+      "title": "palatal nasal (Ctrl+NN)",
+      "character": "ɲ",
+      "like": "N"
+    },
+    {
+      "name": "n hook right",
+      "title": "retroflex nasal (Ctrl+NNN)",
+      "character": "ɳ",
+      "like": "N"
+    },
+    {
+      "name": "N small",
+      "title": "uvular nasal (Ctrl+NNNN)",
+      "character": "ɴ",
+      "like": "N"
+    },
+    {
+      "name": "o open",
+      "title": "open-mid back rounded vowel (Ctrl+O)",
+      "character": "ɔ",
+      "like": "O"
+    },
+    {
+      "name": "oe ipa",
+      "title": "open-mid front rounded vowel (Ctrl+OO)",
+      "character": "œ",
+      "like": "O"
+    },
+    {
+      "name": "a script upside",
+      "title": "open back rounded vowel (Ctrl+OOO)",
+      "character": "ɒ",
+      "like": "O"
+    },
+    {
+      "name": "o open nasalized",
+      "title": "nasalized open-mid back rounded vowel (Ctrl+OOOO)",
+      "character": "ɔ̃",
+      "like": "O"
+    },
+    {
+      "name": "OE small",
+      "title": "open front rounded vowel (Ctrl+OOOOO)",
+      "character": "ɶ",
+      "like": "O"
+    },
+    {
+      "name": "o stroke ipa",
+      "title": "close-mid front rounded vowel (Ctrl+0)",
+      "character": "ø",
+      "like": "0"
+    },
+    {
+      "name": "phi ipa",
+      "title": "voiceless bilabial fricative (Ctrl+P)",
+      "character": "ɸ",
+      "like": "P"
+    },
+    {
+      "name": "r tap",
+      "title": "alveolar tap (Ctrl+R)",
+      "character": "ɾ",
+      "like": "R"
+    },
+    {
+      "name": "r upside",
+      "title": "alveolar approximant (Ctrl+RR)",
+      "character": "ɹ",
+      "like": "R"
+    },
+    {
+      "name": "R small upside",
+      "title": "voiced uvular fricative (Ctrl+RRR)",
+      "character": "ʁ",
+      "like": "R"
+    },
+    {
+      "name": "R small",
+      "title": "uvular trill (Ctrl+RRRR)",
+      "character": "ʀ",
+      "like": "R"
+    },
+    {
+      "name": "r upside hook",
+      "title": "retroflex approximant (Ctrl+RRRRR)",
+      "character": "ɻ",
+      "like": "R"
+    },
+    {
+      "name": "r hook",
+      "title": "retroflex flap (Ctrl+RRRRRR)",
+      "character": "ɽ",
+      "like": "R"
+    },
+    {
+      "name": "r upside long",
+      "title": "alveolar lateral flap (Ctrl+RRRRRRR)",
+      "character": "ɺ",
+      "like": "R"
+    },
+    {
+      "name": "sh",
+      "title": "voiceless postalveolar fricative (Ctrl+S)",
+      "character": "ʃ",
+      "like": "S"
+    },
+    {
+      "name": "s hook",
+      "title": "voiceless retroflex fricative (Ctrl+SS)",
+      "character": "ʂ",
+      "like": "S"
+    },
+    {
+      "name": "theta ipa",
+      "title": "voiceless dental fricative (Ctrl+T)",
+      "character": "θ",
+      "like": "T"
+    },
+    {
+      "name": "tsh",
+      "title": "voiceless postalveolar affricate (Ctrl+TT)",
+      "character": "t͡ʃ",
+      "like": "T"
+    },
+    {
+      "name": "ts",
+      "title": "voiceless alveolar affricate (Ctrl+TTT)",
+      "character": "t͡s",
+      "like": "T"
+    },
+    {
+      "name": "t long",
+      "title": "voiceless retroflex plosive (Ctrl+TTTT)",
+      "character": "ʈ",
+      "like": "T"
+    },
+    {
+      "name": "u horseshoe",
+      "title": "near-close near-back rounded vowel (Ctrl+U)",
+      "character": "ʊ",
+      "like": "U"
+    },
+    {
+      "name": "u barred",
+      "title": "close central rounded vowel (Ctrl+UU)",
+      "character": "ʉ",
+      "like": "U"
+    },
+    {
+      "name": "v upside",
+      "title": "open-mid back unrounded vowel (Ctrl+V)",
+      "character": "ʌ",
+      "like": "V"
+    },
+    {
+      "name": "v smooth",
+      "title": "labiodental approximant (Ctrl+VV)",
+      "character": "ʋ",
+      "like": "V"
+    },
+    {
+      "name": "v hook",
+      "title": "labiodental flap (Ctrl+VVV)",
+      "character": "ⱱ",
+      "like": "V"
+    },
+    {
+      "name": "u extra bowl",
+      "title": "close back unrounded vowel (Ctrl+W)",
+      "character": "ɯ",
+      "like": "W"
+    },
+    {
+      "name": "w upside",
+      "title": "voiceless labio-velar approximant (Ctrl+WW)",
+      "character": "ʍ",
+      "like": "W"
+    },
+    {
+      "name": "u extra bowl hook",
+      "title": "velar approximant (Ctrl+WWW)",
+      "character": "ɰ",
+      "like": "W"
+    },
+    {
+      "name": "chi ipa",
+      "title": "voiceless uvular fricative (Ctrl+X)",
+      "character": "χ",
+      "like": "X"
+    },
+    {
+      "name": "gamma ipa",
+      "title": "voiced velar fricative (Ctrl+Y)",
+      "character": "ɣ",
+      "like": "Y"
+    },
+    {
+      "name": "y upside",
+      "title": "palatal lateral approximant (Ctrl+YY)",
+      "character": "ʎ",
+      "like": "Y"
+    },
+    {
+      "name": "Y small",
+      "title": "near-close near-front rounded vowel (Ctrl+YYY)",
+      "character": "ʏ",
+      "like": "Y"
+    },
+    {
+      "name": "rams horns",
+      "title": "close-mid back unrounded vowel (Ctrl+YYYY)",
+      "character": "ɤ",
+      "like": "Y"
+    },
+    {
+      "name": "zh",
+      "title": "voiced postalveolar fricative (Ctrl+Z)",
+      "character": "ʒ",
+      "like": "Z"
+    },
+    {
+      "name": "z hook",
+      "title": "voiced retroflex fricative (Ctrl+ZZ)",
+      "character": "ʐ",
+      "like": "Z"
+    },
+    {
+      "name": "z loop",
+      "title": "voiced alveolo-palatal fricative (Ctrl+ZZZ)",
+      "character": "ʑ",
+      "like": "Z"
+    },
+    {
+      "name": "glottal stop",
+      "title": "glottal stop (Ctrl+2)",
+      "character": "ʔ",
+      "like": "2"
+    },
+    {
+      "name": "glottal stop flipped",
+      "title": "voiced pharyngeal fricative (Ctrl+22)",
+      "character": "ʕ",
+      "like": "2"
+    },
+    {
+      "name": "glottal stop barred",
+      "title": "epiglottal plosive (Ctrl+222)",
+      "character": "ʡ",
+      "like": "2"
+    },
+    {
+      "name": "glottal stop flipped barred",
+      "title": "voiced epiglottal fricative (Ctrl+2222)",
+      "character": "ʢ",
+      "like": "2"
+    },
+    {
+      "name": "primary stress",
+      "title": "primary stress (Ctrl+Q / Ctrl+, [comma] / Hold Ctrl and press ' twice)",
+      "character": "",
+      "like": "Q"
+    },
+    {
+      "name": "secondary stress",
+      "title": "secondary stress (Ctrl+QQ / hold Ctrl and press , [comma] twice)",
+      "character": "",
+      "like": "Q"
+    },
+    {
+      "name": "tie bar upper",
+      "title": "tie bar (Ctrl+F)",
+      "character": "͡",
+      "like": "F"
+    },
+    {
+      "name": "tie bar lower",
+      "title": "tie bar (Ctrl+FF)",
+      "character": "͜",
+      "like": "F"
+    }
+  ]
+}
