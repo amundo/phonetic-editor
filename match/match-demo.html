@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match.js Demo</title>
+    <style>
+        :root {
+            --primary: #3a6ea5;
+            --primary-dark: #004e8a;
+            --secondary: #f0f4f8;
+            --text: #333;
+            --success: #28a745;
+            --danger: #dc3545;
+        }
+        
+        * {
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: var(--secondary);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-dark);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .demo-section {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            .demo-section {
+                flex-direction: column;
+            }
+        }
+        
+        .panel {
+            flex: 1;
+            padding: 15px;
+            background-color: var(--secondary);
+            border-radius: 8px;
+        }
+        
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .control-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        label {
+            font-weight: bold;
+            min-width: 100px;
+        }
+        
+        select, button {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        
+        button {
+            background-color: var(--primary);
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.2s;
+        }
+        
+        button:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        textarea, pre {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 14px;
+            resize: vertical;
+        }
+        
+        pre {
+            background-color: #f8f9fa;
+            overflow: auto;
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        
+        .success {
+            background-color: #d4edda;
+            border: 1px solid var(--success);
+            color: #155724;
+        }
+        
+        .failure {
+            background-color: #f8d7da;
+            border: 1px solid var(--danger);
+            color: #721c24;
+        }
+        
+        .examples {
+            margin-top: 30px;
+        }
+        
+        .example-item {
+            cursor: pointer;
+            padding: 10px;
+            margin-bottom: 5px;
+            background-color: #f0f4f8;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        .example-item:hover {
+            background-color: #e2e8f0;
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #f0f4f8;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            border-radius: 4px 4px 0 0;
+            margin-right: 5px;
+        }
+        
+        .tab.active {
+            background-color: white;
+            border-bottom: 2px solid white;
+            font-weight: bold;
+            color: var(--primary-dark);
+        }
+        
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 0 4px 4px 4px;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Match.js Demo</h1>
+        <p>This demo allows you to experiment with the <code>match</code> function that compares queries against objects.</p>
+
+        <div class="tabs">
+            <div class="tab active" data-tab="interactive">Interactive Demo</div>
+            <div class="tab" data-tab="docs">Documentation</div>
+        </div>
+
+        <div class="tab-content active" id="interactive">
+            <div class="demo-section">
+                <div class="panel">
+                    <h2>Comparand Object</h2>
+                    <p>The object to match against:</p>
+                    <textarea id="comparand-input">{ 
+  "form": "gato", 
+  "gloss": "cat",
+  "wordClass": "noun",
+  "features": { "number": "singular", "gender": "masculine" }
+}</textarea>
+                </div>
+                
+                <div class="panel">
+                    <h2>Query</h2>
+                    <div class="controls">
+                        <div class="control-group">
+                            <label>Query Type:</label>
+                            <select id="query-type">
+                                <option value="object">Object Query</option>
+                                <option value="array">Array Query</option>
+                            </select>
+                        </div>
+                        <div class="control-group">
+                            <label>Fields Filter:</label>
+                            <input type="text" id="fields-filter" placeholder="e.g. form,gloss (comma separated, optional)">
+                        </div>
+                    </div>
+                    <textarea id="query-input">{ "form": "gato" }</textarea>
+                    <button id="run-match">Run Match</button>
+                </div>
+            </div>
+            
+            <div class="result" id="result-panel">
+                <h3>Result:</h3>
+                <div id="result-output"></div>
+                <pre id="result-details"></pre>
+            </div>
+            
+            <div class="examples">
+                <h2>Example Queries</h2>
+                <div class="example-item" data-query='{ "form": "gato" }' data-type="object">
+                    Simple object query - match on form
+                </div>
+                <div class="example-item" data-query='{ "form": "gato", "gloss": "cat" }' data-type="object">
+                    Object query with multiple fields
+                </div>
+                <div class="example-item" data-query='{ "form": /^g/ }' data-type="object">
+                    Object query with RegExp - form starts with "g"
+                </div>
+                <div class="example-item" data-query='[["form", "gato"]]' data-type="array">
+                    Simple array query - match on form
+                </div>
+                <div class="example-item" data-query='[["form", /^g/], ["form", /o$/]]' data-type="array">
+                    Array query with multiple RegExp on same field
+                </div>
+                <div class="example-item" data-query='{ "form": "gato", "wordClass": "verb" }' data-type="object" data-fields="form">
+                    Object query with fields filter (only check "form")
+                </div>
+                <div class="example-item" data-query='{ "features": { "number": "singular" } }' data-type="object">
+                    Nested object query
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="docs">
+            <h2>Match.js Documentation</h2>
+            
+            <h3>Basic Usage</h3>
+            <p>The <code>match</code> function compares a query against a comparand object and returns <code>true</code> if the query matches the comparand.</p>
+            
+            <h3>Query Types</h3>
+            <h4>Object Query</h4>
+            <pre>match({ "form": "gato" }, { "form": "gato", "gloss": "cat" })</pre>
+            <p>Returns <code>true</code> if all key-value pairs in the query object match corresponding key-value pairs in the comparand.</p>
+            
+            <h4>Array Query</h4>
+            <pre>match([["form", "gato"]], { "form": "gato", "gloss": "cat" })</pre>
+            <p>An alternative syntax where the query is an array of [key, value] pairs.</p>
+            
+            <h3>Fields Filter</h3>
+            <pre>match({ "form": "gato", "wordClass": "noun" }, { "form": "gato" }, ["form"])</pre>
+            <p>The optional third parameter can restrict the comparison to specific fields.</p>
+            
+            <h3>Regular Expressions</h3>
+            <pre>match({ "form": /^g/ }, { "form": "gato" })</pre>
+            <p>Values in the query can be regular expressions that test against the comparand's values.</p>
+            
+            <h3>Special Cases</h3>
+            <ul>
+                <li>Empty strings (<code>""</code>) in the query are ignored and will not match.</li>
+                <li>Missing keys in the comparand will cause the match to fail.</li>
+                <li>The query can be a subset of the comparand (extra fields in comparand are fine).</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Match.js code -->
+    <script type="module">
+        // First, add the match.js code as a module
+        const matchCode = `
+let identifyType = (x) => {
+  let type = Object.prototype.toString.call(x)
+    .toLowerCase()
+    .split(" ")[1]
+    .slice(0, -1)
+    
+  return type
+}
+
+let hasNestedKeys = (path, object) =>
+  path
+    .every((key) => {
+      if (key in object) {
+        object = object[key]
+        return true
+      }
+      return false
+    })
+
+let match = (queries, comparand, fields = []) => {
+  if (!Array.isArray(queries)) {
+    let queryObject = queries
+    queries = Object.entries(queryObject)
+  }
+
+  if (fields.length) {
+    queries = queries
+      .filter(([key, value]) => fields.includes(key))
+  }
+
+  let comparandHasAllKeys = queries
+    .every(([key, value]) => comparand[key])
+
+  if (!comparandHasAllKeys) return false
+
+  let allValuesMatch = queries
+    .every(([key, value]) => {
+      if (typeof value == "string" && value.trim().length == 0) {
+        return false
+      } else if (typeof value == "string") {
+        return comparand[key] == value
+      } else if (identifyType(value) == "number") {
+        return match(value, comparand[key])
+      } else if (identifyType(value) == "object") { // wtf
+        return match(value, comparand[key])
+      } else if (value instanceof RegExp) {
+        return value.test(comparand[key])
+      }
+    })
+
+  return allValuesMatch
+}
+
+export { match }
+`;
+
+        // Create a blob URL for the module
+        const blob = new Blob([matchCode], { type: 'text/javascript' });
+        const moduleURL = URL.createObjectURL(blob);
+
+        // Import the module
+        let matchModule;
+        
+        async function importMatchModule() {
+            try {
+                matchModule = await import(moduleURL);
+                console.log('Match module imported successfully');
+            } catch (error) {
+                console.error('Error importing match module:', error);
+            }
+        }
+
+        // Import the module when the page loads
+        importMatchModule();
+
+        // UI interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            const comparandInput = document.getElementById('comparand-input');
+            const queryInput = document.getElementById('query-input');
+            const queryType = document.getElementById('query-type');
+            const fieldsFilter = document.getElementById('fields-filter');
+            const runButton = document.getElementById('run-match');
+            const resultOutput = document.getElementById('result-output');
+            const resultDetails = document.getElementById('result-details');
+            const resultPanel = document.getElementById('result-panel');
+            
+            // Tab functionality
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(tc => tc.classList.remove('active'));
+                    
+                    tab.classList.add('active');
+                    const tabId = tab.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Run match function on button click
+            runButton.addEventListener('click', runMatch);
+
+            // Click on example items to load them
+            document.querySelectorAll('.example-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const queryData = item.getAttribute('data-query');
+                    const queryTypeValue = item.getAttribute('data-type');
+                    const fieldsData = item.getAttribute('data-fields');
+                    
+                    queryInput.value = queryData;
+                    queryType.value = queryTypeValue;
+                    fieldsFilter.value = fieldsData || '';
+                    
+                    runMatch();
+                });
+            });
+
+            async function runMatch() {
+                if (!matchModule) {
+                    await importMatchModule();
+                }
+                
+                try {
+                    // Parse input values
+                    const comparandText = comparandInput.value;
+                    const queryText = queryInput.value;
+                    
+                    // Parse the comparand object
+                    let comparandObj;
+                    try {
+                        // Replace RegExp strings with actual RegExp objects
+                        comparandObj = JSON.parse(comparandText.replace(/\/(.+?)\//g, function(match, group) {
+                            return `{"__regexp__": "${group}"}`;
+                        }));
+                        
+                        // Convert back any RegExp objects
+                        convertRegExpObjects(comparandObj);
+                    } catch (e) {
+                        throw new Error(`Error parsing comparand: ${e.message}`);
+                    }
+                    
+                    // Parse the query based on selected type
+                    let queryObj;
+                    if (queryType.value === 'object') {
+                        try {
+                            // Replace RegExp strings with actual RegExp objects
+                            queryObj = JSON.parse(queryText.replace(/\/(.+?)\//g, function(match, group) {
+                                return `{"__regexp__": "${group}"}`;
+                            }));
+                            
+                            // Convert back any RegExp objects
+                            convertRegExpObjects(queryObj);
+                        } catch (e) {
+                            throw new Error(`Error parsing object query: ${e.message}`);
+                        }
+                    } else { // array type
+                        try {
+                            // For array queries, replace RegExp strings with actual RegExp objects
+                            const arrayText = queryText.replace(/\/(.+?)\//g, function(match, group) {
+                                return `{"__regexp__": "${group}"}`;
+                            });
+                            
+                            queryObj = JSON.parse(arrayText);
+                            
+                            // Process each entry to handle RegExp objects
+                            queryObj.forEach(entry => {
+                                if (entry[1] && typeof entry[1] === 'object' && entry[1].__regexp__) {
+                                    entry[1] = new RegExp(entry[1].__regexp__);
+                                }
+                            });
+                        } catch (e) {
+                            throw new Error(`Error parsing array query: ${e.message}`);
+                        }
+                    }
+                    
+                    // Parse fields filter
+                    const fieldsArray = fieldsFilter.value
+                        ? fieldsFilter.value.split(',').map(f => f.trim()).filter(f => f)
+                        : [];
+                    
+                    // Run the match function
+                    const result = matchModule.match(queryObj, comparandObj, fieldsArray);
+                    
+                    // Display the result
+                    if (result) {
+                        resultPanel.className = 'result success';
+                        resultOutput.innerHTML = '<strong>Match: true</strong>';
+                    } else {
+                        resultPanel.className = 'result failure';
+                        resultOutput.innerHTML = '<strong>Match: false</strong>';
+                    }
+                    
+                    // Display details about the match
+                    resultDetails.textContent = `Query: ${JSON.stringify(queryObj, replacer, 2)}\n`;
+                    resultDetails.textContent += `Comparand: ${JSON.stringify(comparandObj, replacer, 2)}\n`;
+                    resultDetails.textContent += `Fields Filter: ${JSON.stringify(fieldsArray)}\n`;
+                    
+                } catch (error) {
+                    resultPanel.className = 'result failure';
+                    resultOutput.innerHTML = `<strong>Error:</strong> ${error.message}`;
+                    resultDetails.textContent = error.stack || '';
+                }
+            }
+            
+            // Helper function to convert "__regexp__" objects to actual RegExp objects
+            function convertRegExpObjects(obj) {
+                if (!obj || typeof obj !== 'object') return;
+                
+                if (obj.__regexp__) {
+                    return new RegExp(obj.__regexp__);
+                }
+                
+                for (const key in obj) {
+                    if (obj[key] && typeof obj[key] === 'object') {
+                        if (obj[key].__regexp__) {
+                            obj[key] = new RegExp(obj[key].__regexp__);
+                        } else {
+                            convertRegExpObjects(obj[key]);
+                        }
+                    }
+                }
+            }
+            
+            // Helper function for JSON stringification that handles RegExp
+            function replacer(key, value) {
+                if (value instanceof RegExp) {
+                    return `/${value.source}/`;
+                }
+                return value;
+            }
+        });
+    </script>
+</body>
+</html>
