@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>  
+  <title>&lt;character-map></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="character-map.css">
+
+</head>
+<body>
+
+    <character-map></character-map>  
+
+<script type="module">
+import {CharacterMap} from './CharacterMap.js'
+
+
+// Example usage:
+const charMap = document.querySelector('character-map');
+charMap.setData([
+  { value: 'α', name: 'Alpha', description: 'Greek letter alpha' },
+  { value: 'β', name: 'Beta', description: 'Greek letter beta' },
+  { value: 'γ', name: 'Gamma', description: 'Greek letter gamma' },
+  // ...more characters
+]);
+</script>
+
+</body>
+</html>
