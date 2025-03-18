@@ -1,312 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'48'%20height%3D'48'%20viewBox%3D'0%200%2016%2016'%3E%3Ctext%20x%3D'0'%20y%3D'14'%3E%F0%9F%91%84%3C%2Ftext%3E%3C%2Fsvg%3E" />
-  <title>Phonetic Transcription Editor</title>
-  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.5;
-      margin: 0;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-      color: #333;
-    }
-    
-    header {
-      margin-bottom: 2rem;
-    }
-    
-    h1, h2, h3 {
-      color: #2d3748;
-    }
-    
-    .editor-container {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    
-    @media (max-width: 768px) {
-      .editor-container {
-        grid-template-columns: 1fr;
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'48'%20height%3D'48'%20viewBox%3D'0%200%2016%2016'%3E%3Ctext%20x%3D'0'%20y%3D'14'%3E%F0%9F%91%84%3C%2Ftext%3E%3C%2Fsvg%3E"
+    />
+    <title>Phonetic Transcription Editor</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    >
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        line-height: 1.5;
+        margin: 0;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        color: #333;
       }
-    }
-    
-    .search-tools {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    
-    .recent-characters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin: 1rem 0;
-      padding: 1rem;
-      border: 1px solid #e2e8f0;
-      border-radius: 0.375rem;
-    }
-    
-    .char-button {
-      font-family: 'Gentium Plus', serif;
-      font-size: 1.25rem;
-      min-width: 40px;
-      height: 40px;
-      border: 1px solid #e2e8f0;
-      background-color: #f7fafc;
-      border-radius: 0.25rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .char-button:hover {
-      background-color: #edf2f7;
-    }
-    
-    .action-buttons {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    .button {
-      padding: 0.5rem 1rem;
-      background-color: #4a5568;
-      color: white;
-      border: none;
-      border-radius: 0.25rem;
-      cursor: pointer;
-    }
-    
-    .button:hover {
-      background-color: #2d3748;
-    }
-    
-    .button.primary {
-      background-color: #3182ce;
-    }
-    
-    .button.primary:hover {
-      background-color: #2c5282;
-    }
-    
-    .tabs {
-      display: flex;
-      border-bottom: 1px solid #e2e8f0;
-      margin-bottom: 1rem;
-    }
-    
-    .tab {
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      border-bottom: 2px solid transparent;
-    }
-    
-    .tab.active {
-      border-bottom: 2px solid #3182ce;
-      font-weight: bold;
-    }
-    
-    .tab-content {
-      display: none;
-      padding: 1rem 0;
-    }
-    
-    .tab-content.active {
-      display: block;
-    }
-    
-    .samples {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    
-    .sample-item {
-      padding: 1rem;
-      border: 1px solid #e2e8f0;
-      border-radius: 0.375rem;
-      cursor: pointer;
-    }
-    
-    .sample-item:hover {
-      background-color: #f7fafc;
-    }
-    
-    pre {
-      font-family: 'Gentium Plus', monospace;
-      white-space: pre-wrap;
-      margin: 0;
-    }
-    
-    .ruleset-section {
-      margin-bottom: 2rem;
-    }
-    
-    .ruleset-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      gap: 0.5rem;
-    }
-    
-    .ruleset-item {
-      padding: 0.5rem;
-      border: 1px solid #e2e8f0;
-      border-radius: 0.25rem;
-      cursor: pointer;
-      text-align: center;
-    }
-    
-    .ruleset-item:hover {
-      background-color: #f7fafc;
-    }
-    
-    footer {
-      margin-top: 3rem;
-      padding-top: 1rem;
-      border-top: 1px solid #e2e8f0;
-      color: #718096;
-      font-size: 0.875rem;
-    }
-  </style>
-  
-  <!-- Import our custom elements -->
-  <script type="module" src="index.js"></script>
-</head>
-<body>
-  <header>
-    <h1>Phonetic Transcription Editor</h1>
-    <p>A specialized tool for linguistic fieldwork and phonetic data transcription</p>
-  </header>
-  
-  <main>
-    <div class="action-buttons">
-      <button id="import-text" class="button">Import Text</button>
-      <button id="export-text" class="button">Export Text</button>
-      <button id="import-rules" class="button">Import Rules</button>
-      <button id="export-rules" class="button">Export Rules</button>
-    </div>
-    
-    <div class="editor-container">
-      <div class="main-editor">
-        <!-- Main editor web component -->
-        <phonetic-editor></phonetic-editor>
-        
-        <div class="recent-characters-section">
-          <h3>Recently Used Characters</h3>
-          <div class="recent-characters">
-            <!-- Recent characters will be displayed here -->
+
+      header {
+        margin-bottom: 2rem;
+      }
+
+      h1, h2, h3 {
+        color: #2d3748;
+      }
+
+      .editor-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        .editor-container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .search-tools {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .recent-characters {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 1rem 0;
+        padding: 1rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 0.375rem;
+      }
+
+      .char-button {
+        font-family: "Gentium Plus", serif;
+        font-size: 1.25rem;
+        min-width: 40px;
+        height: 40px;
+        border: 1px solid #e2e8f0;
+        background-color: #f7fafc;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .char-button:hover {
+        background-color: #edf2f7;
+      }
+
+      .action-buttons {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .button {
+        padding: 0.5rem 1rem;
+        background-color: #4a5568;
+        color: white;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #2d3748;
+      }
+
+      .button.primary {
+        background-color: #3182ce;
+      }
+
+      .button.primary:hover {
+        background-color: #2c5282;
+      }
+
+      .tabs {
+        display: flex;
+        border-bottom: 1px solid #e2e8f0;
+        margin-bottom: 1rem;
+      }
+
+      .tab {
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+      }
+
+      .tab.active {
+        border-bottom: 2px solid #3182ce;
+        font-weight: bold;
+      }
+
+      .tab-content {
+        display: none;
+        padding: 1rem 0;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+
+      .samples {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .sample-item {
+        padding: 1rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 0.375rem;
+        cursor: pointer;
+      }
+
+      .sample-item:hover {
+        background-color: #f7fafc;
+      }
+
+      pre {
+        font-family: "Gentium Plus", monospace;
+        white-space: pre-wrap;
+        margin: 0;
+      }
+
+      .ruleset-section {
+        margin-bottom: 2rem;
+      }
+
+      .ruleset-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 0.5rem;
+      }
+
+      .ruleset-item {
+        padding: 0.5rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .ruleset-item:hover {
+        background-color: #f7fafc;
+      }
+
+      footer {
+        margin-top: 3rem;
+        padding-top: 1rem;
+        border-top: 1px solid #e2e8f0;
+        color: #718096;
+        font-size: 0.875rem;
+      }
+    </style>
+
+    <!-- Import our custom elements -->
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Phonetic Transcription Editor</h1>
+      <p>
+        A specialized tool for linguistic fieldwork and phonetic data
+        transcription
+      </p>
+    </header>
+
+    <main>
+      <div class="action-buttons">
+        <button id="import-text" class="button">Import Text</button>
+        <button id="export-text" class="button">Export Text</button>
+        <button id="import-rules" class="button">Import Rules</button>
+        <button id="export-rules" class="button">Export Rules</button>
+      </div>
+
+      <div class="editor-container">
+        <div class="main-editor">
+          <!-- Main editor web component -->
+          <phonetic-editor></phonetic-editor>
+
+          <div class="recent-characters-section">
+            <h3>Recently Used Characters</h3>
+            <div class="recent-characters">
+              <!-- Recent characters will be displayed here -->
+            </div>
+          </div>
+        </div>
+
+        <div class="search-tools">
+          <div class="tabs">
+            <div class="tab active" data-tab="features">Search by Features</div>
+            <div class="tab" data-tab="aliases">Search by Name</div>
+          </div>
+
+          <div class="tab-content active" data-content="features">
+            <!-- Feature search web component -->
+            <ipa-feature-search></ipa-feature-search>
+          </div>
+
+          <div class="tab-content" data-content="aliases">
+            <!-- Alias search web component -->
+            <ipa-alias-search></ipa-alias-search>
           </div>
         </div>
       </div>
-      
-      <div class="search-tools">
-        <div class="tabs">
-          <div class="tab active" data-tab="features">Search by Features</div>
-          <div class="tab" data-tab="aliases">Search by Name</div>
-        </div>
-        
-        <div class="tab-content active" data-content="features">
-          <!-- Feature search web component -->
-          <ipa-feature-search></ipa-feature-search>
-        </div>
-        
-        <div class="tab-content" data-content="aliases">
-          <!-- Alias search web component -->
-          <ipa-alias-search></ipa-alias-search>
+
+      <div class="ruleset-section">
+        <h2>Predefined Rulesets</h2>
+        <p>Click to load a predefined set of substitution rules:</p>
+        <div class="ruleset-list">
+          <div class="ruleset-item" data-ruleset="ipa-basic">
+            Basic IPA Symbols
+          </div>
+          <div class="ruleset-item" data-ruleset="tone-marks">Tone Marks</div>
+          <div class="ruleset-item" data-ruleset="diacritics">Diacritics</div>
         </div>
       </div>
-    </div>
-    
-    <div class="ruleset-section">
-      <h2>Predefined Rulesets</h2>
-      <p>Click to load a predefined set of substitution rules:</p>
-      <div class="ruleset-list">
-        <div class="ruleset-item" data-ruleset="ipa-basic">Basic IPA Symbols</div>
-        <div class="ruleset-item" data-ruleset="tone-marks">Tone Marks</div>
-        <div class="ruleset-item" data-ruleset="diacritics">Diacritics</div>
-      </div>
-    </div>
-    
-    <h2>Sample Transcriptions</h2>
-    <div class="samples">
-      <div class="sample-item">
-        <h3>Mixteco Example</h3>
-        <pre>a³¹ t͡ʃoŋ⁵⁵ a⁵¹, t͡ʃon³¹ maŋ⁵⁵ eɾ⁵⁵ a³¹ me⁵¹ kɨ³¹ tuŋ⁵⁵ va³¹ ŋot⁵⁵ t͡ʃoŋ⁵⁵</pre>
-      </div>
-      <div class="sample-item">
-        <h3>Kashaya Pomo Example</h3>
-        <pre>/b/ ≠ /p/ | /bo:to/ 'voto (electoral)', /po:to/ 'indio voto'
-/b/ ≠ /t/ | /bus/ 'autobús', /qu:ka/ 'tío paterno'</pre>
-      </div>
-      <div class="sample-item">
-        <h3>Hiligaynon Example</h3>
-        <pre>nagakaʔon ʃa sang manok
+
+      <h2>Sample Transcriptions</h2>
+      <div class="samples">
+        <div class="sample-item">
+          <h3>Mixteco Example</h3>
+          <pre
+          >a³¹ t͡ʃoŋ⁵⁵ a⁵¹, t͡ʃon³¹ maŋ⁵⁵ eɾ⁵⁵ a³¹ me⁵¹ kɨ³¹ tuŋ⁵⁵ va³¹ ŋot⁵⁵ t͡ʃoŋ⁵⁵</pre
+          >
+        </div>
+        <div class="sample-item">
+          <h3>Kashaya Pomo Example</h3>
+          <pre
+          >
+/b/ ≠ /p/ | /bo:to/ 'voto (electoral)', /po:to/ 'indio voto'
+/b/ ≠ /t/ | /bus/ 'autobús', /qu:ka/ 'tío paterno'</pre
+          >
+        </div>
+        <div class="sample-item">
+          <h3>Hiligaynon Example</h3>
+          <pre
+          >
+nagakaʔon ʃa sang manok
 naŋhampang si huwan kag si pedro
-diliʔ aku ka-ilɔŋ</pre>
+diliʔ aku ka-ilɔŋ</pre
+          >
+        </div>
       </div>
-    </div>
-    
-    <h2>Usage Guide</h2>
-    <div class="usage-guide">
-      <h3>Working with the Editor</h3>
-      <ul>
-        <li><strong>Text Substitution:</strong> Type patterns like <code>{sh}</code> and they'll be automatically converted to <code>ʃ</code>.</li>
-        <li><strong>Character Insertion:</strong> Use the search tools to find and insert phonetic characters without typing.</li>
-        <li><strong>Recent Characters:</strong> Click any character in the "Recently Used" section to insert it at the cursor.</li>
-        <li><strong>Predefined Rulesets:</strong> Load common substitution patterns for IPA, tone marks, and diacritics.</li>
-      </ul>
-      
-      <h3>Finding Characters</h3>
-      <ul>
-        <li><strong>Feature Search:</strong> Find characters by selecting phonetic features (e.g., place of articulation, manner).</li>
-        <li><strong>Name Search:</strong> Find characters by typing their name or description (e.g., "schwa", "velar nasal").</li>
-      </ul>
-      
-      <h3>Saving Your Work</h3>
-      <ul>
-        <li><strong>Export Text:</strong> Save your transcription to a text file.</li>
-        <li><strong>Export Rules:</strong> Save your substitution rules to a JSON file for future use.</li>
-        <li><strong>Import:</strong> Load previously saved text or rules.</li>
-      </ul>
-      
-      <p>The editor automatically saves your work locally in your browser, so you can come back to it later.</p>
-      
-      <h3>Unicode Normalization</h3>
-      <p>This editor automatically applies NFKC Unicode normalization to ensure proper rendering of combining characters and diacritics. This is essential for accurate phonetic representation.</p>
-    </div>
-  </main>
-  
-  <footer>
-    <p>Created for linguistic fieldwork and phonetic transcription. Uses Gentium Plus font for optimal display of phonetic characters.</p>
-  </footer>
-  
-  <script>
-    // Tab switching
-    document.querySelectorAll('.tab').forEach(tab => {
-      tab.addEventListener('click', () => {
-        // Update active tab
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        tab.classList.add('active');
-        
-        // Update active content
-        const contentId = tab.dataset.tab;
-        document.querySelectorAll('.tab-content').forEach(content => {
-          content.classList.remove('active');
-        });
-        document.querySelector(`.tab-content[data-content="${contentId}"]`).classList.add('active');
-      });
-    });
-  </script>
-</body>
+
+      <h2>Usage Guide</h2>
+      <div class="usage-guide">
+        <h3>Working with the Editor</h3>
+        <ul>
+          <li>
+            <strong>Text Substitution:</strong> Type patterns like <code
+            >{sh}</code> and they'll be automatically converted to <code>ʃ</code
+            >.
+          </li>
+          <li>
+            <strong>Character Insertion:</strong> Use the search tools to find
+            and insert phonetic characters without typing.
+          </li>
+          <li>
+            <strong>Recent Characters:</strong> Click any character in the
+            "Recently Used" section to insert it at the cursor.
+          </li>
+          <li>
+            <strong>Predefined Rulesets:</strong> Load common substitution
+            patterns for IPA, tone marks, and diacritics.
+          </li>
+        </ul>
+
+        <h3>Finding Characters</h3>
+        <ul>
+          <li>
+            <strong>Feature Search:</strong> Find characters by selecting
+            phonetic features (e.g., place of articulation, manner).
+          </li>
+          <li>
+            <strong>Name Search:</strong> Find characters by typing their name
+            or description (e.g., "schwa", "velar nasal").
+          </li>
+        </ul>
+
+        <h3>Saving Your Work</h3>
+        <ul>
+          <li>
+            <strong>Export Text:</strong> Save your transcription to a text
+            file.
+          </li>
+          <li>
+            <strong>Export Rules:</strong> Save your substitution rules to a
+            JSON file for future use.
+          </li>
+          <li><strong>Import:</strong> Load previously saved text or rules.</li>
+        </ul>
+
+        <p>
+          The editor automatically saves your work locally in your browser, so
+          you can come back to it later.
+        </p>
+
+        <h3>Unicode Normalization</h3>
+        <p>
+          This editor automatically applies NFKC Unicode normalization to ensure
+          proper rendering of combining characters and diacritics. This is
+          essential for accurate phonetic representation.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Created for linguistic fieldwork and phonetic transcription. Uses
+        Gentium Plus font for optimal display of phonetic characters.
+      </p>
+    </footer>
+
+    <script>
+      // Tab switching
+      document.querySelectorAll(".tab").forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Update active tab
+          document.querySelectorAll(".tab").forEach((t) =>
+            t.classList.remove("active")
+          )
+          tab.classList.add("active")
+
+          // Update active content
+          const contentId = tab.dataset.tab
+          document.querySelectorAll(".tab-content").forEach(
+            (content) => {
+              content.classList.remove("active")
+            },
+          )
+          document.querySelector(
+            `.tab-content[data-content="${contentId}"]`,
+          ).classList.add("active")
+        })
+      })
+    </script>
+  </body>
 </html>
