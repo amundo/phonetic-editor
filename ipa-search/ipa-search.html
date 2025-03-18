@@ -1,21 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>  
-  <title>&lt;ipa-search></title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="ipa-search.css">
+  <head>
+    <title>&lt;ipa-search></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="ipa-search.css">
+  </head>
+  <body>
+    <ipa-search></ipa-search>
 
-</head>
-<body>
+    <script type="module">
+      import { IpaSearch } from "./IpaSearch.js"
 
-    <ipa-search></ipa-search>  
-
-<script type="module">
-import {IpaSearch} from './IpaSearch.js'
-
-window.IpaSearch = document.querySelector('ipa-search')
-</script>
-
-</body>
+      window.IpaSearch = document.querySelector("ipa-search")
+    </script>
+  </body>
 </html>

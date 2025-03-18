@@ -6,9 +6,7 @@ css: ipa-search.css
 
 <main>
 
-
 ## Example
-
 
 ```html
 <ipa-search></ipa-search>
@@ -18,38 +16,22 @@ css: ipa-search.css
 <ipa-search></ipa-search>
 ```
 
-
-
-
-
 ## Attributes
-
-
 
 ## Methods
 
-
-
 ## Data
-
-
 
 ## Events
 
-
-
 ## Layouts
-
-
 
 ## See also
 
 </main>
-
 
 <script type="module">
 import {IpaSearch} from './IpaSearch.js'
 
 window.ipaSearch = document.querySelector('ipa-search')
 </script>
-

@@ -1,38 +1,38 @@
 // IPAFeatureSearch.js - A specialized component for searching IPA by phonetic features
 export class IPAFeatureSearch extends HTMLElement {
   constructor() {
-    super();
-    this.attachShadow({ mode: 'open' });
-    
+    super()
+    this.attachShadow({ mode: "open" })
+
     // Data store
-    this._ipaData = null;
-    this._searchResults = [];
-    
+    this._ipaData = null
+    this._searchResults = []
+
     // Initialize
-    this.render();
-    this.loadData();
-    this.setupEventListeners();
+    this.render()
+    this.loadData()
+    this.setupEventListeners()
   }
-  
+
   connectedCallback() {
     // Component is now in the DOM
   }
-  
+
   // Data loading
   async loadData() {
     try {
-      const response = await fetch('ipa.json');
-      this._ipaData = await response.json();
-      this.updateFeatureFilters();
-      
+      const response = await fetch("ipa.json")
+      this._ipaData = await response.json()
+      this.updateFeatureFilters()
+
       // Notify that data is loaded
-      this.dispatchEvent(new CustomEvent('data-loaded'));
+      this.dispatchEvent(new CustomEvent("data-loaded"))
     } catch (error) {
-      console.error('Error loading IPA data:', error);
-      this.showError('Failed to load IPA data. Please check your connection.');
+      console.error("Error loading IPA data:", error)
+      this.showError("Failed to load IPA data. Please check your connection.")
     }
   }
-  
+
   // UI Rendering
   render() {
     const style = `
@@ -135,8 +135,8 @@ export class IPAFeatureSearch extends HTMLElement {
         font-size: 0.875rem;
         margin-bottom: 0.5rem;
       }
-    `;
-    
+    `
+
     const html = `
       <div class="container">
         <h3>Search IPA by Features</h3>
@@ -155,157 +155,180 @@ export class IPAFeatureSearch extends HTMLElement {
           <div class="no-results">Select features and click "Search" to find characters</div>
         </div>
       </div>
-    `;
-    
-    this.shadowRoot.innerHTML = `<style>${style}</style>${html}`;
+    `
+
+    this.shadowRoot.innerHTML = `<style>${style}</style>${html}`
   }
-  
+
   updateFeatureFilters() {
-    if (!this._ipaData) return;
-    
-    const featureFilters = this.shadowRoot.querySelector('.feature-filters');
-    if (!featureFilters) return;
-    
+    if (!this._ipaData) return
+
+    const featureFilters = this.shadowRoot.querySelector(".feature-filters")
+    if (!featureFilters) return
+
     // Clear existing filters
-    featureFilters.innerHTML = '';
-    
+    featureFilters.innerHTML = ""
+
     // Create select elements for each feature type
     const featureTypes = [
-      { name: 'height', options: this._ipaData.heights, label: 'Vowel Height' },
-      { name: 'backness', options: this._ipaData.backness, label: 'Vowel Backness' },
-      { name: 'rounding', options: this._ipaData.rounding, label: 'Vowel Rounding' },
-      { name: 'place', options: this._ipaData.places, label: 'Place of Articulation' },
-      { name: 'manner', options: this._ipaData.manners, label: 'Manner of Articulation' },
-      { name: 'voicing', options: this._ipaData.voicings, label: 'Voicing' }
-    ];
-    
-    featureTypes.forEach(featureType => {
-      const container = document.createElement('div');
-      
-      const select = document.createElement('select');
-      select.className = 'feature-select';
-      select.dataset.feature = featureType.name;
-      
-      const defaultOption = document.createElement('option');
-      defaultOption.value = '';
-      defaultOption.textContent = featureType.label;
-      select.appendChild(defaultOption);
-      
-      featureType.options.forEach(option => {
-        const optionEl = document.createElement('option');
-        optionEl.value = option;
-        optionEl.textContent = option;
-        select.appendChild(optionEl);
-      });
-      
-      container.appendChild(select);
-      featureFilters.appendChild(container);
-    });
+      { name: "height", options: this._ipaData.heights, label: "Vowel Height" },
+      {
+        name: "backness",
+        options: this._ipaData.backness,
+        label: "Vowel Backness",
+      },
+      {
+        name: "rounding",
+        options: this._ipaData.rounding,
+        label: "Vowel Rounding",
+      },
+      {
+        name: "place",
+        options: this._ipaData.places,
+        label: "Place of Articulation",
+      },
+      {
+        name: "manner",
+        options: this._ipaData.manners,
+        label: "Manner of Articulation",
+      },
+      { name: "voicing", options: this._ipaData.voicings, label: "Voicing" },
+    ]
+
+    featureTypes.forEach((featureType) => {
+      const container = document.createElement("div")
+
+      const select = document.createElement("select")
+      select.className = "feature-select"
+      select.dataset.feature = featureType.name
+
+      const defaultOption = document.createElement("option")
+      defaultOption.value = ""
+      defaultOption.textContent = featureType.label
+      select.appendChild(defaultOption)
+
+      featureType.options.forEach((option) => {
+        const optionEl = document.createElement("option")
+        optionEl.value = option
+        optionEl.textContent = option
+        select.appendChild(optionEl)
+      })
+
+      container.appendChild(select)
+      featureFilters.appendChild(container)
+    })
   }
-  
+
   renderSearchResults(results) {
-    const resultsContainer = this.shadowRoot.querySelector('.search-results');
-    if (!resultsContainer) return;
-    
-    resultsContainer.innerHTML = '';
-    
+    const resultsContainer = this.shadowRoot.querySelector(".search-results")
+    if (!resultsContainer) return
+
+    resultsContainer.innerHTML = ""
+
     if (results.length === 0) {
-      resultsContainer.innerHTML = '<div class="no-results">No matching characters found</div>';
-      return;
+      resultsContainer.innerHTML =
+        '<div class="no-results">No matching characters found</div>'
+      return
     }
-    
-    results.forEach(result => {
-      const item = document.createElement('div');
-      item.className = 'result-item';
-      item.dataset.char = result.letter;
-      
-      const charEl = document.createElement('div');
-      charEl.className = 'result-char';
-      charEl.textContent = result.letter;
-      
-      const nameEl = document.createElement('div');
-      nameEl.className = 'result-name';
-      nameEl.textContent = result.name || '';
-      
-      item.appendChild(charEl);
-      item.appendChild(nameEl);
-      resultsContainer.appendChild(item);
-    });
-    
+
+    results.forEach((result) => {
+      const item = document.createElement("div")
+      item.className = "result-item"
+      item.dataset.char = result.letter
+
+      const charEl = document.createElement("div")
+      charEl.className = "result-char"
+      charEl.textContent = result.letter
+
+      const nameEl = document.createElement("div")
+      nameEl.className = "result-name"
+      nameEl.textContent = result.name || ""
+
+      item.appendChild(charEl)
+      item.appendChild(nameEl)
+      resultsContainer.appendChild(item)
+    })
+
     // Update result count
-    const resultCount = this.shadowRoot.querySelector('.result-count');
+    const resultCount = this.shadowRoot.querySelector(".result-count")
     if (resultCount) {
-      resultCount.textContent = `Found ${results.length} character${results.length !== 1 ? 's' : ''}`;
+      resultCount.textContent = `Found ${results.length} character${
+        results.length !== 1 ? "s" : ""
+      }`
     }
   }
-  
+
   // Search functionality
   searchByFeatures(criteria) {
-    if (!this._ipaData) return [];
-    
-    const results = [];
-    const types = ['vowels', 'consonants'];
-    
-    types.forEach(type => {
-      const phones = this._ipaData.phones[type] || [];
-      
-      phones.forEach(phone => {
-        let matches = true;
-        
+    if (!this._ipaData) return []
+
+    const results = []
+    const types = ["vowels", "consonants"]
+
+    types.forEach((type) => {
+      const phones = this._ipaData.phones[type] || []
+
+      phones.forEach((phone) => {
+        let matches = true
+
         // Check each criterion
         for (const [feature, value] of Object.entries(criteria)) {
           if (value && phone[feature] !== value) {
-            matches = false;
-            break;
+            matches = false
+            break
           }
         }
-        
+
         if (matches) {
-          results.push(phone);
+          results.push(phone)
         }
-      });
-    });
-    
-    return results;
+      })
+    })
+
+    return results
   }
-  
+
   // Event handling
   setupEventListeners() {
     // Search button
-    const searchButton = this.shadowRoot.querySelector('.search-button');
+    const searchButton = this.shadowRoot.querySelector(".search-button")
     if (searchButton) {
-      searchButton.addEventListener('click', () => {
-        const criteria = {};
-        
-        this.shadowRoot.querySelectorAll('.feature-select').forEach(select => {
-          if (select.value) {
-            criteria[select.dataset.feature] = select.value;
-          }
-        });
-        
-        const results = this.searchByFeatures(criteria);
-        this._searchResults = results;
-        this.renderSearchResults(results);
-      });
+      searchButton.addEventListener("click", () => {
+        const criteria = {}
+
+        this.shadowRoot.querySelectorAll(".feature-select").forEach(
+          (select) => {
+            if (select.value) {
+              criteria[select.dataset.feature] = select.value
+            }
+          },
+        )
+
+        const results = this.searchByFeatures(criteria)
+        this._searchResults = results
+        this.renderSearchResults(results)
+      })
     }
-    
+
     // Click on search result
-    this.shadowRoot.addEventListener('click', (event) => {
-      const resultItem = event.target.closest('.result-item');
+    this.shadowRoot.addEventListener("click", (event) => {
+      const resultItem = event.target.closest(".result-item")
       if (resultItem && resultItem.dataset.char) {
-        this.dispatchEvent(new CustomEvent('character-selected', {
-          detail: { character: resultItem.dataset.char }
-        }));
+        this.dispatchEvent(
+          new CustomEvent("character-selected", {
+            detail: { character: resultItem.dataset.char },
+          }),
+        )
       }
-    });
+    })
   }
-  
+
   // Utility methods
   showError(message) {
-    console.error(message);
+    console.error(message)
     // In a real implementation, you might want to show a toast or other UI element
   }
 }
 
 // Define the custom element
-customElements.define('ipa-feature-search', IPAFeatureSearch);
+customElements.define("ipa-feature-search", IPAFeatureSearch)

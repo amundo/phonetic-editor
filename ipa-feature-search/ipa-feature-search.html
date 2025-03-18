@@ -1,21 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>  
-  <title>&lt;ipa-feature-search></title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="ipa-feature-search.css">
+  <head>
+    <title>&lt;ipa-feature-search></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="ipa-feature-search.css">
+  </head>
+  <body>
+    <ipa-feature-search></ipa-feature-search>
 
-</head>
-<body>
+    <script type="module">
+      import { IpaFeatureSearch } from "./IpaFeatureSearch.js"
 
-    <ipa-feature-search></ipa-feature-search>  
-
-<script type="module">
-import {IpaFeatureSearch} from './IpaFeatureSearch.js'
-
-window.IpaFeatureSearch = document.querySelector('ipa-feature-search')
-</script>
-
-</body>
+      window.IpaFeatureSearch = document.querySelector(
+        "ipa-feature-search",
+      )
+    </script>
+  </body>
 </html>

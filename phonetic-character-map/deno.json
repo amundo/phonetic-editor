@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "build": "pandoc -f markdown -t html --section-divs --css phonetic-character-map-docs.css --template=template.html -o phonetic-character-map-docs.html phonetic-character-map-docs.md"
+  }
+}

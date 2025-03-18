@@ -1,21 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>  
-  <title>&lt;phonetic-editor></title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="phonetic-editor.css">
+  <head>
+    <title>&lt;phonetic-editor></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="phonetic-editor.css">
+  </head>
+  <body>
+    <phonetic-editor></phonetic-editor>
 
-</head>
-<body>
+    <script type="module">
+      import { PhoneticEditor } from "./PhoneticEditor.js"
 
-    <phonetic-editor></phonetic-editor>  
-
-<script type="module">
-import {PhoneticEditor} from './PhoneticEditor.js'
-
-window.PhoneticEditor = document.querySelector('phonetic-editor')
-</script>
-
-</body>
+      window.PhoneticEditor = document.querySelector("phonetic-editor")
+    </script>
+  </body>
 </html>

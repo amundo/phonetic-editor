@@ -6,9 +6,7 @@ css: phonetic-editor.css
 
 <main>
 
-
 ## Example
-
 
 ```html
 <phonetic-editor></phonetic-editor>
@@ -18,38 +16,22 @@ css: phonetic-editor.css
 <phonetic-editor></phonetic-editor>
 ```
 
-
-
-
-
 ## Attributes
-
-
 
 ## Methods
 
-
-
 ## Data
-
-
 
 ## Events
 
-
-
 ## Layouts
-
-
 
 ## See also
 
 </main>
-
 
 <script type="module">
 import {PhoneticEditor} from './PhoneticEditor.js'
 
 window.phoneticEditor = document.querySelector('phonetic-editor')
 </script>
-

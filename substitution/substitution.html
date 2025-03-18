@@ -11,28 +11,33 @@
     />
   </head>
   <body>
-    <substitution-textarea value="cxangxo sxang" id="demo-textarea"></substitution-textarea>
-    <substitution-input value="cxangxo sxang" id="demo-input"></substitution-input>
+    <substitution-textarea
+      value="cxangxo sxang"
+      id="demo-textarea"
+    ></substitution-textarea>
+    <substitution-input
+      value="cxangxo sxang"
+      id="demo-input"
+    ></substitution-input>
 
     <script type="module">
       import { SubstitutionTextarea } from "./substitution-textarea/SubstitutionTextarea.js"
       import { SubstitutionInput } from "./substitution-input/SubstitutionInput.js"
 
       let demoInput = document.getElementById("demo-input")
-      let demoTextarea = document.getElementById("demo-textarea");
+      let demoTextarea = document.getElementById("demo-textarea")
 
       const rulesList = [
-          ["cx", "ĉ"],
-          ["gx", "ĝ"],
-          ["hx", "ĥ"],
-          ["jx", "ĵ"],
-          ["sx", "ŝ"],
-          ["ux", "ŭ"],
-        ]
-      
+        ["cx", "ĉ"],
+        ["gx", "ĝ"],
+        ["hx", "ĥ"],
+        ["jx", "ĵ"],
+        ["sx", "ŝ"],
+        ["ux", "ŭ"],
+      ]
+
       demoInput.rules = rulesList
       demoTextarea.rules = rulesList
-
-      </script>
+    </script>
   </body>
 </html>
