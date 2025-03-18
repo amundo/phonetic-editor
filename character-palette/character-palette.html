@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>  
+  <title>&lt;character-palette></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="character-palette.css">
+
+</head>
+<body>
+
+    <character-palette id="demo"></character-palette>  
+
+<script type="module">
+import {CharacterPalette} from './CharacterPalette.js'
+
+
+// Create and add to the DOM
+const demo = document.querySelector('#demo');
+document.body.appendChild(demo);
+
+// Set custom characters
+demo.data = ['♠', '♥', '♦', '♣', '★', '☆', '♫', '♪'];
+
+// Listen for character selection
+demo.addEventListener('character-select', (event) => {
+  console.log('Selected character:', event.detail.character);
+})
+</script>
+
+</body>
+</html>
