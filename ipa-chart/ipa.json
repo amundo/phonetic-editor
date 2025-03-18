@@ -1,0 +1,256 @@
+{
+  "symbols": {
+    "m": { "features": { "type": "consonant", "manner": "nasal", "place": "bilabial", "voiced": true } },
+    "ɱ": { "features": { "type": "consonant", "manner": "nasal", "place": "labiodental", "voiced": true } },
+    "n": { "features": { "type": "consonant", "manner": "nasal", "place": "alveolar", "voiced": true } },
+    "ɳ": { "features": { "type": "consonant", "manner": "nasal", "place": "retroflex", "voiced": true } },
+    "ɲ": { "features": { "type": "consonant", "manner": "nasal", "place": "palatal", "voiced": true } },
+    "ŋ": { "features": { "type": "consonant", "manner": "nasal", "place": "velar", "voiced": true } },
+    "ɴ": { "features": { "type": "consonant", "manner": "nasal", "place": "uvular", "voiced": true } },
+    
+    "p": { "features": { "type": "consonant", "manner": "plosive", "place": "bilabial", "voiced": false } },
+    "b": { "features": { "type": "consonant", "manner": "plosive", "place": "bilabial", "voiced": true } },
+    "t": { "features": { "type": "consonant", "manner": "plosive", "place": "alveolar", "voiced": false } },
+    "d": { "features": { "type": "consonant", "manner": "plosive", "place": "alveolar", "voiced": true } },
+    "ʈ": { "features": { "type": "consonant", "manner": "plosive", "place": "retroflex", "voiced": false } },
+    "ɖ": { "features": { "type": "consonant", "manner": "plosive", "place": "retroflex", "voiced": true } },
+    "c": { "features": { "type": "consonant", "manner": "plosive", "place": "palatal", "voiced": false } },
+    "ɟ": { "features": { "type": "consonant", "manner": "plosive", "place": "palatal", "voiced": true } },
+    "k": { "features": { "type": "consonant", "manner": "plosive", "place": "velar", "voiced": false } },
+    "g": { "features": { "type": "consonant", "manner": "plosive", "place": "velar", "voiced": true } },
+    "q": { "features": { "type": "consonant", "manner": "plosive", "place": "uvular", "voiced": false } },
+    "ɢ": { "features": { "type": "consonant", "manner": "plosive", "place": "uvular", "voiced": true } },
+    "ʔ": { "features": { "type": "consonant", "manner": "plosive", "place": "glottal", "voiced": false } },
+    
+    "ɸ": { "features": { "type": "consonant", "manner": "fricative", "place": "bilabial", "voiced": false } },
+    "β": { "features": { "type": "consonant", "manner": "fricative", "place": "bilabial", "voiced": true } },
+    "f": { "features": { "type": "consonant", "manner": "fricative", "place": "labiodental", "voiced": false } },
+    "v": { "features": { "type": "consonant", "manner": "fricative", "place": "labiodental", "voiced": true } },
+    "θ": { "features": { "type": "consonant", "manner": "fricative", "place": "dental", "voiced": false } },
+    "ð": { "features": { "type": "consonant", "manner": "fricative", "place": "dental", "voiced": true } },
+    "s": { "features": { "type": "consonant", "manner": "fricative", "place": "alveolar", "voiced": false } },
+    "z": { "features": { "type": "consonant", "manner": "fricative", "place": "alveolar", "voiced": true } },
+    "ʃ": { "features": { "type": "consonant", "manner": "fricative", "place": "postalveolar", "voiced": false } },
+    "ʒ": { "features": { "type": "consonant", "manner": "fricative", "place": "postalveolar", "voiced": true } },
+    "ʂ": { "features": { "type": "consonant", "manner": "fricative", "place": "retroflex", "voiced": false } },
+    "ʐ": { "features": { "type": "consonant", "manner": "fricative", "place": "retroflex", "voiced": true } },
+    "ç": { "features": { "type": "consonant", "manner": "fricative", "place": "palatal", "voiced": false } },
+    "ʝ": { "features": { "type": "consonant", "manner": "fricative", "place": "palatal", "voiced": true } },
+    "x": { "features": { "type": "consonant", "manner": "fricative", "place": "velar", "voiced": false } },
+    "ɣ": { "features": { "type": "consonant", "manner": "fricative", "place": "velar", "voiced": true } },
+    "χ": { "features": { "type": "consonant", "manner": "fricative", "place": "uvular", "voiced": false } },
+    "ʁ": { "features": { "type": "consonant", "manner": "fricative", "place": "uvular", "voiced": true } },
+    "ħ": { "features": { "type": "consonant", "manner": "fricative", "place": "pharyngeal", "voiced": false } },
+    "ʕ": { "features": { "type": "consonant", "manner": "fricative", "place": "pharyngeal", "voiced": true } },
+    "h": { "features": { "type": "consonant", "manner": "fricative", "place": "glottal", "voiced": false } },
+    "ɦ": { "features": { "type": "consonant", "manner": "fricative", "place": "glottal", "voiced": true } },
+    
+    "ʋ": { "features": { "type": "consonant", "manner": "approximant", "place": "labiodental", "voiced": true } },
+    "ɹ": { "features": { "type": "consonant", "manner": "approximant", "place": "alveolar", "voiced": true } },
+    "ɻ": { "features": { "type": "consonant", "manner": "approximant", "place": "retroflex", "voiced": true } },
+    "j": { "features": { "type": "consonant", "manner": "approximant", "place": "palatal", "voiced": true } },
+    "ɰ": { "features": { "type": "consonant", "manner": "approximant", "place": "velar", "voiced": true } },
+    
+    "ⱱ": { "features": { "type": "consonant", "manner": "tap", "place": "labiodental", "voiced": true } },
+    "ɾ": { "features": { "type": "consonant", "manner": "tap", "place": "alveolar", "voiced": true } },
+    "ɽ": { "features": { "type": "consonant", "manner": "tap", "place": "retroflex", "voiced": true } },
+    
+    "ʙ": { "features": { "type": "consonant", "manner": "trill", "place": "bilabial", "voiced": true } },
+    "r": { "features": { "type": "consonant", "manner": "trill", "place": "alveolar", "voiced": true } },
+    "ʀ": { "features": { "type": "consonant", "manner": "trill", "place": "uvular", "voiced": true } },
+    
+    "ɬ": { "features": { "type": "consonant", "manner": "lateral fricative", "place": "alveolar", "voiced": false } },
+    "ɮ": { "features": { "type": "consonant", "manner": "lateral fricative", "place": "alveolar", "voiced": true } },
+    "l": { "features": { "type": "consonant", "manner": "lateral approximant", "place": "alveolar", "voiced": true } },
+    "ɭ": { "features": { "type": "consonant", "manner": "lateral approximant", "place": "retroflex", "voiced": true } },
+    "ʎ": { "features": { "type": "consonant", "manner": "lateral approximant", "place": "palatal", "voiced": true } },
+    "ʟ": { "features": { "type": "consonant", "manner": "lateral approximant", "place": "velar", "voiced": true } },
+    
+    "ʘ": { "features": { "type": "consonant", "manner": "click", "place": "bilabial" } },
+    "ǀ": { "features": { "type": "consonant", "manner": "click", "place": "dental" } },
+    "ǃ": { "features": { "type": "consonant", "manner": "click", "place": "alveolar" } },
+    "ǂ": { "features": { "type": "consonant", "manner": "click", "place": "palatoalveolar" } },
+    "ǁ": { "features": { "type": "consonant", "manner": "click", "place": "lateral" } },
+    
+    "ɓ": { "features": { "type": "consonant", "manner": "implosive", "place": "bilabial", "voiced": true } },
+    "ɗ": { "features": { "type": "consonant", "manner": "implosive", "place": "dental/alveolar", "voiced": true } },
+    "ʄ": { "features": { "type": "consonant", "manner": "implosive", "place": "palatal", "voiced": true } },
+    "ɠ": { "features": { "type": "consonant", "manner": "implosive", "place": "velar", "voiced": true } },
+    "ʛ": { "features": { "type": "consonant", "manner": "implosive", "place": "uvular", "voiced": true } },
+    
+    "pʼ": { "features": { "type": "consonant", "manner": "ejective", "place": "bilabial" } },
+    "tʼ": { "features": { "type": "consonant", "manner": "ejective", "place": "dental/alveolar" } },
+    "kʼ": { "features": { "type": "consonant", "manner": "ejective", "place": "velar" } },
+    "sʼ": { "features": { "type": "consonant", "manner": "ejective", "place": "alveolar", "type2": "fricative" } },
+    
+    "ʍ": { "features": { "type": "consonant", "manner": "approximant", "place": "labialized velar", "voiced": false } },
+    "w": { "features": { "type": "consonant", "manner": "approximant", "place": "labialized velar", "voiced": true } },
+    "ɥ": { "features": { "type": "consonant", "manner": "approximant", "place": "labialized palatal", "voiced": true } },
+    "ɕ": { "features": { "type": "consonant", "manner": "fricative", "place": "alveolopalatal", "voiced": false } },
+    "ʑ": { "features": { "type": "consonant", "manner": "fricative", "place": "alveolopalatal", "voiced": true } },
+    "ɧ": { "features": { "type": "consonant", "manner": "fricative", "place": "multiple articulation", "description": "Simultaneous ʃ and x" } },
+    
+    "i": { "features": { "type": "vowel", "height": "close", "backness": "front", "rounded": false } },
+    "y": { "features": { "type": "vowel", "height": "close", "backness": "front", "rounded": true } },
+    "ɨ": { "features": { "type": "vowel", "height": "close", "backness": "central", "rounded": false } },
+    "ʉ": { "features": { "type": "vowel", "height": "close", "backness": "central", "rounded": true } },
+    "ɯ": { "features": { "type": "vowel", "height": "close", "backness": "back", "rounded": false } },
+    "u": { "features": { "type": "vowel", "height": "close", "backness": "back", "rounded": true } },
+    
+    "ɪ": { "features": { "type": "vowel", "height": "near-close", "backness": "near-front", "rounded": false } },
+    "ʏ": { "features": { "type": "vowel", "height": "near-close", "backness": "near-front", "rounded": true } },
+    "ʊ": { "features": { "type": "vowel", "height": "near-close", "backness": "near-back", "rounded": true } },
+    
+    "e": { "features": { "type": "vowel", "height": "close-mid", "backness": "front", "rounded": false } },
+    "ø": { "features": { "type": "vowel", "height": "close-mid", "backness": "front", "rounded": true } },
+    "ɘ": { "features": { "type": "vowel", "height": "close-mid", "backness": "central", "rounded": false } },
+    "ɵ": { "features": { "type": "vowel", "height": "close-mid", "backness": "central", "rounded": true } },
+    "ɤ": { "features": { "type": "vowel", "height": "close-mid", "backness": "back", "rounded": false } },
+    "o": { "features": { "type": "vowel", "height": "close-mid", "backness": "back", "rounded": true } },
+    
+    "ə": { "features": { "type": "vowel", "height": "mid", "backness": "central", "rounded": false } },
+    
+    "ɛ": { "features": { "type": "vowel", "height": "open-mid", "backness": "front", "rounded": false } },
+    "œ": { "features": { "type": "vowel", "height": "open-mid", "backness": "front", "rounded": true } },
+    "ɜ": { "features": { "type": "vowel", "height": "open-mid", "backness": "central", "rounded": false } },
+    "ɞ": { "features": { "type": "vowel", "height": "open-mid", "backness": "central", "rounded": true } },
+    "ʌ": { "features": { "type": "vowel", "height": "open-mid", "backness": "back", "rounded": false } },
+    "ɔ": { "features": { "type": "vowel", "height": "open-mid", "backness": "back", "rounded": true } },
+    
+    "æ": { "features": { "type": "vowel", "height": "near-open", "backness": "front", "rounded": false } },
+    "ɐ": { "features": { "type": "vowel", "height": "near-open", "backness": "central", "rounded": false } },
+    
+    "a": { "features": { "type": "vowel", "height": "open", "backness": "front", "rounded": false } },
+    "ɶ": { "features": { "type": "vowel", "height": "open", "backness": "front", "rounded": true } },
+    "ɑ": { "features": { "type": "vowel", "height": "open", "backness": "back", "rounded": false } },
+    "ɒ": { "features": { "type": "vowel", "height": "open", "backness": "back", "rounded": true } },
+    
+    "ˈ": { "features": { "type": "suprasegmental", "name": "primary stress" } },
+    "ˌ": { "features": { "type": "suprasegmental", "name": "secondary stress" } },
+    "ː": { "features": { "type": "suprasegmental", "name": "long" } },
+    "ˑ": { "features": { "type": "suprasegmental", "name": "half-long" } },
+    ".": { "features": { "type": "suprasegmental", "name": "syllable break" } },
+    "|": { "features": { "type": "suprasegmental", "name": "minor (foot) break" } },
+    "‖": { "features": { "type": "suprasegmental", "name": "major (intonation) break" } },
+    "↗": { "features": { "type": "suprasegmental", "name": "global rise" } },
+    "↘": { "features": { "type": "suprasegmental", "name": "global fall" } },
+    
+    "e˥": { "features": { "type": "tone", "name": "extra high tone", "level": "top" } },
+    "e˦": { "features": { "type": "tone", "name": "high tone", "level": "high" } },
+    "e˧": { "features": { "type": "tone", "name": "mid tone", "level": "mid" } },
+    "e˨": { "features": { "type": "tone", "name": "low tone", "level": "low" } },
+    "e˩": { "features": { "type": "tone", "name": "extra low tone", "level": "bottom" } }
+  },
+  "categories": [
+    {
+      "name": "Pulmonic Consonants",
+      "axes": [
+        {
+          "name": "manner",
+          "values": ["nasal", "plosive", "fricative", "approximant", "tap", "trill", "lateral fricative", "lateral approximant"]
+        },
+        {
+          "name": "place",
+          "values": ["bilabial", "labiodental", "dental", "alveolar", "postalveolar", "retroflex", "palatal", "velar", "uvular", "pharyngeal", "glottal"]
+        }
+      ]
+    },
+    {
+      "name": "Non-pulmonic Consonants",
+      "groups": [
+        {
+          "name": "Click",
+          "symbols": ["ʘ", "ǀ", "ǃ", "ǂ", "ǁ"]
+        },
+        {
+          "name": "Implosive",
+          "symbols": ["ɓ", "ɗ", "ʄ", "ɠ", "ʛ"]
+        },
+        {
+          "name": "Ejective",
+          "symbols": ["pʼ", "tʼ", "kʼ", "sʼ"]
+        }
+      ]
+    },
+    {
+      "name": "Co-articulated Consonants",
+      "symbols": ["ʍ", "w", "ɥ", "ɕ", "ʑ", "ɧ"]
+    },
+    {
+      "name": "Vowels",
+      "axes": [
+        {
+          "name": "height",
+          "values": ["close", "near-close", "close-mid", "mid", "open-mid", "near-open", "open"]
+        },
+        {
+          "name": "backness",
+          "values": ["front", "near-front", "central", "near-back", "back"]
+        }
+      ]
+    },
+    {
+      "name": "Suprasegmentals",
+      "groups": [
+        {
+          "name": "Stress",
+          "symbols": ["ˈ", "ˌ"]
+        },
+        {
+          "name": "Length",
+          "symbols": ["ː", "ˑ", "̆"]
+        },
+        {
+          "name": "Breaks",
+          "symbols": [".", "|", "‖"]
+        },
+        {
+          "name": "Intonation",
+          "symbols": ["↗", "↘"]
+        }
+      ]
+    },
+    {
+      "name": "Tones",
+      "groups": [
+        {
+          "name": "Level",
+          "symbols": ["e˥", "e˦", "e˧", "e˨", "e˩"]
+        },
+        {
+          "name": "Contour",
+          "symbols": ["e˥˩", "e˩˥", "e˦˥", "e˩˨", "e˧˦˧", "e˨˩", "e˦˩", "e˥˧", "e˧˥", "e˩˧"]
+        }
+      ]
+    },
+    {
+      "name": "Diacritics",
+      "groups": [
+        {
+          "name": "Voice",
+          "symbols": ["◌̥", "◌̬", "◌ʰ", "◌̤", "◌̰"]
+        },
+        {
+          "name": "Place",
+          "symbols": ["◌̪", "◌̺", "◌̻", "◌̟", "◌̠", "◌̼", "◌ʷ", "◌ʲ", "◌ˠ", "◌ˤ"]
+        },
+        {
+          "name": "Height",
+          "symbols": ["◌̝", "◌̞", "◌̩", "◌̯"]
+        },
+        {
+          "name": "Rounding",
+          "symbols": ["◌̹", "◌̜"]
+        },
+        {
+          "name": "Other",
+          "symbols": ["◌̈", "◌̽", "◌̚", "◌̃", "◌˞", "◌͡◌", "◌͜◌"]
+        },
+        {
+          "name": "Tone",
+          "symbols": ["◌̋", "◌́", "◌̄", "◌̀", "◌̏"]
+        }
+      ]
+    }
+  ]
+}
