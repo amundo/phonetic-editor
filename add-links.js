@@ -22,9 +22,10 @@ async function processHtmlFile(filePath) {
     if (scriptLinks.size === 0) return; // No module imports, no changes needed
 
     const footer = doc.createElement("footer");
+    footer.classList.add('script-links');
     scriptLinks.forEach((scriptPath) => {
       const a = doc.createElement("a");
-      a.href = scriptPath;
+      a.setAttribute("href", scriptPath)
       a.textContent = scriptPath;
       footer.appendChild(a);
       footer.appendChild(doc.createTextNode(" "));
