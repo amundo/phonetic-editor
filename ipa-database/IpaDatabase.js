@@ -131,7 +131,7 @@ export class IpaDatabase {
 
       if (matches) {
         results.push({
-          letter: pIpaDatabasehone.letter,
+          letter: phone.letter,
           name: phone.name,
           type: phone.type,
           features: phone.features,
@@ -164,4 +164,7 @@ export class IpaDatabase {
 
 // Create a singleton instance
 const ipaDatabase = new IpaDatabase()
-export default ipaDatabase
+ipaDatabase.load()
+export {
+  ipaDatabase
+} 
