@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caret Position Popup</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      padding: 20px;
+    }
+
+    .editor {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 10px;
+      min-height: 150px;
+      white-space: pre-wrap;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .popup {
+      position: absolute;
+      display: none;
+      background-color: #fff;
+      border: 1px solid #e1e4e8;
+      border-radius: 6px;
+      box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+      width: 200px;
+      z-index: 100;
+    }
+
+    .popup-item {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-bottom: 1px solid #eaecef;
+    }
+
+    .popup-item:last-child {
+      border-bottom: none;
+    }
+
+    .popup-item:hover {
+      background-color: #f0f5ff;
+    }
+
+    .popup-icon {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      text-align: center;
+    }
+
+    .popup-text {
+      flex-grow: 1;
+    }
+
+    .info {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #f6f8fa;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h2>GitHub-style Caret Position Popup</h2>
+  
+  <div class="info">
+    Try typing <strong>:**</strong> (colon) to trigger the emoji picker popup at the caret position.
+  </div>
+  
+  <div class="editor" id="editor" contenteditable="true">
+    Try typing some text here!
+    
+    When you type a colon (:) the popup will appear at the caret position.
+    
+    This mimics GitHub's comment interface functionality.
+  </div>
+
+  <div class="popup" id="popup">
+    <div class="popup-item" data-insert="👍">
+      <span class="popup-icon">👍</span>
+      <span class="popup-text">+1</span>
+    </div>
+    <div class="popup-item" data-insert="👎">
+      <span class="popup-icon">👎</span>
+      <span class="popup-text">-1</span>
+    </div>
+    <div class="popup-item" data-insert="💯">
+      <span class="popup-icon">💯</span>
+      <span class="popup-text">100</span>
+    </div>
+    <div class="popup-item" data-insert="🔢">
+      <span class="popup-icon">🔢</span>
+      <span class="popup-text">1234</span>
+    </div>
+    <div class="popup-item" data-insert="🥇">
+      <span class="popup-icon">🥇</span>
+      <span class="popup-text">1st_place_medal</span>
+    </div>
+  </div>
+
+  <script>
+      const editor = document.getElementById('editor');
+      const popup = document.getElementById('popup');
+      let triggerChar = false;
+      let lastCaretRect = null;
+      let selectedIndex = -1;
+      const popupItems = Array.from(document.querySelectorAll('.popup-item'));
+
+      // Position the popup at the caret position
+      function positionPopupAtCaret() {
+        const selection = window.getSelection();
+        
+        if (selection.rangeCount > 0) {
+          const range = selection.getRangeAt(0);
+          const rect = range.getBoundingClientRect();
+          
+          // Save the rect for scroll adjustments
+          lastCaretRect = rect;
+          
+          // Calculate position relative to viewport
+          const editorRect = editor.getBoundingClientRect();
+          
+          // Position popup below the caret
+          popup.style.left = `${rect.left}px`;
+          popup.style.top = `${rect.bottom + window.scrollY}px`;
+          
+          // Handle case where popup would appear offscreen
+          const rightEdge = rect.left + popup.offsetWidth;
+          if (rightEdge > window.innerWidth) {
+            popup.style.left = `${window.innerWidth - popup.offsetWidth - 10}px`;
+          }
+          
+          popup.style.display = 'block';
+          
+          // Reset selected item when showing popup
+          updateSelectedItem(-1);
+        }
+      }
+
+      // Update the selected item in the popup
+      function updateSelectedItem(index) {
+        // Clear previous selection
+        popupItems.forEach(item => {
+          item.style.backgroundColor = '';
+        });
+        
+        selectedIndex = index;
+        
+        // If valid index, highlight it
+        if (index >= 0 && index < popupItems.length) {
+          popupItems[index].style.backgroundColor = '#f0f5ff';
+          // Scroll into view if needed
+          popupItems[index].scrollIntoView({ block: 'nearest' });
+        }
+      }
+
+      // Insert the selected text at the caret position
+      function insertSelectedItem(index) {
+        if (index < 0 || index >= popupItems.length) return;
+        
+        const item = popupItems[index];
+        const insertText = item.getAttribute('data-insert');
+        
+        const selection = window.getSelection();
+        if (selection.rangeCount > 0) {
+          const range = selection.getRangeAt(0);
+          
+          // Move range back to remove the trigger character
+          if (triggerChar) {
+            range.setStart(range.startContainer, range.startOffset - 1);
+            range.deleteContents();
+          }
+          
+          // Insert the selected item text
+          const textNode = document.createTextNode(insertText + ' ');
+          range.insertNode(textNode);
+          
+          // Move caret to end of inserted text
+          range.setStartAfter(textNode);
+          range.setEndAfter(textNode);
+          selection.removeAllRanges();
+          selection.addRange(range);
+          
+          // Hide popup
+          popup.style.display = 'none';
+          triggerChar = false;
+          
+          // Focus back on editor
+          editor.focus();
+        }
+      }
+
+      // Hide popup when clicking elsewhere
+      document.addEventListener('click', (e) => {
+        if (!popup.contains(e.target) && e.target !== editor) {
+          popup.style.display = 'none';
+          triggerChar = false;
+        }
+      });
+
+      // Handle scroll events to reposition popup if needed
+      document.addEventListener('scroll', () => {
+        if (popup.style.display === 'block' && lastCaretRect) {
+          // Update position based on scroll
+          popup.style.top = `${lastCaretRect.bottom + window.scrollY}px`;
+        }
+      });
+
+      // Monitor input in the editor
+      editor.addEventListener('input', (e) => {
+        const text = editor.innerText || editor.textContent;
+        const selection = window.getSelection();
+        
+        if (selection.rangeCount > 0) {
+          const range = selection.getRangeAt(0);
+          const offset = range.startOffset;
+          
+          // Get the character before the current position
+          let prevChar = '';
+          if (offset > 0) {
+            // Handle different node types
+            if (range.startContainer.nodeType === 3) { // Text node
+              prevChar = range.startContainer.textContent[offset - 1];
+            } else {
+              // Try to get the last character from the previous node if at beginning of node
+              const allNodes = Array.from(editor.childNodes);
+              for (let i = 0; i < allNodes.length; i++) {
+                if (allNodes[i] === range.startContainer && i > 0 && allNodes[i-1].nodeType === 3) {
+                  const prevNode = allNodes[i-1];
+                  prevChar = prevNode.textContent[prevNode.textContent.length - 1];
+                  break;
+                }
+              }
+            }
+          }
+          
+          // Check if the user just typed the trigger character (:)
+          if (prevChar === ':') {
+            triggerChar = true;
+            positionPopupAtCaret();
+          } else if (triggerChar && prevChar === ' ') {
+            // Hide popup if space is typed after trigger
+            popup.style.display = 'none';
+            triggerChar = false;
+          }
+        }
+      });
+
+      // Handle key events for navigation and selection
+      editor.addEventListener('keydown', (e) => {
+        if (popup.style.display === 'block') {
+          switch (e.key) {
+            case 'Escape':
+              // Close popup with Escape key
+              popup.style.display = 'none';
+              triggerChar = false;
+              e.preventDefault();
+              break;
+              
+            case 'ArrowDown':
+              // Navigate down through items
+              updateSelectedItem(Math.min(selectedIndex + 1, popupItems.length - 1));
+              e.preventDefault();
+              break;
+              
+            case 'ArrowUp':
+              // Navigate up through items
+              updateSelectedItem(Math.max(selectedIndex - 1, 0));
+              e.preventDefault();
+              break;
+              
+            case 'Enter':
+              // Select current item and insert text
+              if (selectedIndex >= 0) {
+                insertSelectedItem(selectedIndex);
+                e.preventDefault();
+              }
+              break;
+              
+            case 'Tab':
+              // Also allow Tab for selection
+              if (selectedIndex >= 0) {
+                insertSelectedItem(selectedIndex);
+                e.preventDefault();
+              } else if (popupItems.length > 0) {
+                // If nothing selected, select first item
+                insertSelectedItem(0);
+                e.preventDefault();
+              }
+              break;
+          }
+        }
+      });
+
+      // Insert selected item on click
+      popupItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          insertSelectedItem(index);
+        });
+        
+        // Highlight item on hover
+        item.addEventListener('mouseenter', () => {
+          updateSelectedItem(index);
+        });
+      });
+      
+      // Focus the editor on page load
+      editor.focus();
+    
+  </script>
+</body>
+</html>
